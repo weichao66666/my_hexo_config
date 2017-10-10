@@ -115,5 +115,5 @@ deploy:
   type: git
   repo: 
     github: git@github.com:weichao66666/weichao66666.github.io.git  # 部署到github
-    coding: git@git.coding.net:weichao66666/weichao66666.git,master # 部署到coding.net
+    coding: git@git.coding.net:weichao66666/weichao66666.git        # 部署到coding.net
   branch: master

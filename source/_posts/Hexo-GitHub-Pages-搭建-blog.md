@@ -7,10 +7,6 @@ categories:
 copyright: true
 ---
 
-# <center>**Hexo + GitHub Pages 搭建 blog**</center>
-
----
-
 # **Reference**
 
 * [Hexo Documentation](https://hexo.io/docs/ "https://hexo.io/docs/")
