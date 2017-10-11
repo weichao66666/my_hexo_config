@@ -41,7 +41,7 @@ copyright: true
 
 	配置完成后状态栏会出现一个钥匙的标志。
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_2.png)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_2.png)
 	
 ### **解锁 OEM**
 
@@ -61,13 +61,13 @@ copyright: true
 
 	在命令行中执行`adb reboot bootloader`。
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_3.jpg)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_3.jpg)
 
 1. 进入 BootLoader 解锁界面
 
 	在命令行中执行`fastboot oem unlock`。
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_4.jpg)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_4.jpg)
 
 1. 解锁
 
@@ -75,7 +75,7 @@ copyright: true
 
 	解锁完成后，最后一行是`Device is UNLOCKED`。
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_5.jpg)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_5.jpg)
 
 ---
 
@@ -99,17 +99,17 @@ copyright: true
 
 	可将 img 文件（比如 twrp-3.1.1-1-fastboot-marlin.img）放到某个位置（比如 d 盘根目录）下，在命令行中执行`fastboot boot d:/twrp-3.1.1-1-fastboot-marlin.img`，等待重启。
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_6.jpg)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_6.jpg)
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_7.jpg)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_7.jpg)
 
 1. 刷 TWRP
 
 	选择`Install`，选择内部存储空间中的 zip 文件并刷入。
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_8.jpg)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_8.jpg)
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_9.jpg)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_9.jpg)
 
 ---
 
@@ -135,6 +135,6 @@ copyright: true
 
 	选择内部存储空间中的 zip 文件并刷入。
 
-![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_10.jpg)
+	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E8%A7%A3%E9%94%81_10.jpg)
 
 ---
