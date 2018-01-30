@@ -17,6 +17,7 @@ copyright: true
 * [NexT](http://theme-next.iissnan.com/getting-started.html "http://theme-next.iissnan.com/getting-started.html")
 * [hexo的next主题个性化教程:打造炫酷网站](http://www.jianshu.com/p/f054333ac9e6 "http://www.jianshu.com/p/f054333ac9e6")
 * [Hexo文章图片存储选七牛（当然支持MD都可以）](http://www.jianshu.com/p/ec2c8acf63cd "http://www.jianshu.com/p/ec2c8acf63cd")
+* [Markdown 代码高亮](http://heckaitor.github.io/2014/04/10/hexo-markdown-code-highlight/ "http://heckaitor.github.io/2014/04/10/hexo-markdown-code-highlight/")
 
 ---
 
