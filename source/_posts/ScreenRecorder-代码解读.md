@@ -22,6 +22,11 @@ copyright: true
 * [H264 获取SPS与PPS（附源码）](http://blog.csdn.net/zgyulongfei/article/details/7538523 "http://blog.csdn.net/zgyulongfei/article/details/7538523")
 * [通过RTMP play分析FLV格式详解](http://blog.csdn.net/sweibd/article/details/52189907 "http://blog.csdn.net/sweibd/article/details/52189907")
 * [RTMP中FLV流到标准h264、aac的转换](http://www.cnblogs.com/chef/archive/2012/07/18/2597279.html)
+* [libRTMP使用说明](http://blog.csdn.net/leixiaohua1020/article/details/14229543)
+* [带你吃透RTMP](http://mingyangshang.github.io/2016/03/06/RTMP%E5%8D%8F%E8%AE%AE/ "http://mingyangshang.github.io/2016/03/06/RTMP%E5%8D%8F%E8%AE%AE/")
+* [直播推流实现RTMP协议的一些注意事项](https://www.jianshu.com/p/00aceabce944 "https://www.jianshu.com/p/00aceabce944")
+* [RTMPdump（libRTMP） 源代码分析 8： 发送消息（Message）](http://blog.csdn.net/leixiaohua1020/article/details/12958747 "http://blog.csdn.net/leixiaohua1020/article/details/12958747")
+* [简单的iOS直播推流——flv 编码与音视频时间戳同步](https://juejin.im/post/5a57272f6fb9a01cb0493ca0 "https://juejin.im/post/5a57272f6fb9a01cb0493ca0")
 
 ---
 
@@ -142,7 +147,7 @@ public class ScreenRecordListenerService extends Service {
 
         @Override
         public void sendDanmaku(List<DanmakuBean> danmakuBeanList) throws RemoteException {
-            Log.e(TAG, "danmaku msg = " + danmakuBeanList.get(0).getMessage());
+            Log.d(TAG, "danmaku msg: " + danmakuBeanList.get(0).getMessage());
         }
     };
 
@@ -185,15 +190,15 @@ public class ScreenRecordListenerService extends Service {
 
 # **Packager**
 
-## **H264Packager**
+## **AvcPackager**
 
 {% codeblock lang:java %}
-public static class H264Packager {
+public static class AvcPackager {
     public static byte[] generateAvcDecoderConfigurationRecord(MediaFormat mediaFormat) {
         // 获取 csd-0 缓冲区的值，该值对应 SPS；csd-1 对应 PPS
         ByteBuffer spsByteBuff = mediaFormat.getByteBuffer("csd-0");
         ByteBuffer ppsByteBuff = mediaFormat.getByteBuffer("csd-1");
-        // 跳过 4 个字节的 configurationVersion，固定使用了 0x01
+        // 跳过 4 个字节
         spsByteBuff.position(4);
         ppsByteBuff.position(4);
         // 获取缓冲区剩余字节数
@@ -223,12 +228,12 @@ public static class H264Packager {
         result[5] = (byte) 0xE1;// 3bit的reserved + 5bit的numOfSequenceParameterSets，实际测试时发现总为0xe1
         // result 数组第 7 位放置 spsLength 的高 8 位
         // result 数组第 8 位放置 spsLength 的低 8 位
-        ByteArrayTools.intToByteArrayTwoByte(result, 6, spsLength);
+        ByteArrayTools.intToTwoByteArray(result, 6, spsLength);
         int pos = 8 + spsLength;
         result[pos] = (byte) 0x01;// numOfPictureParameterSets，实际测试时发现总为0x01
         // result 数组第 8+spsLength+1 位放置 ppsLength 的高 8 位
         // result 数组第 8+spsLength+2 位放置 ppsLength 的低 8 位
-        ByteArrayTools.intToByteArrayTwoByte(result, pos + 1, ppsLength);
+        ByteArrayTools.intToTwoByteArray(result, pos + 1, ppsLength);
         return result;
     }
 }
@@ -236,65 +241,38 @@ public static class H264Packager {
 
 ### **generateAvcDecoderConfigurationRecord(MediaFormat mediaFormat)**
 
-将`AVC`格式重新拼接。
-
-1、SPS & PPS
-
->**SPS**：Sequence Parameter Sets，针对一个连续编码视频序列的参数。
-
->**PPS**：Picture Paramater Set，针对一个序列中某一幅图像或者某几幅图像的参数。
+按`FLV`要求的`AVC`的`AVCDecoderConfigurationRecord`格式编码。
 
 ![](http://otkw6sse5.bkt.clouddn.com/ScreenRecorder-%E4%BB%A3%E7%A0%81%E8%A7%A3%E8%AF%BB1519666280252_1.png "Android 中 codec-specific data（编解码特征数据）")
 
 其中可以看到`AVC`格式的`SPS`、`PPS`分别对应`csd-0`和`csd-1`。
 
-2、从 AVC 报文看报头数据结构
-
-![](http://otkw6sse5.bkt.clouddn.com/ScreenRecorder-%E4%BB%A3%E7%A0%81%E8%A7%A3%E8%AF%BB1519666280252_2.png)
-
-图中阴影部分对应了报头全部数据
-
-数据|数据位置的说明
--|-
-0x61 0x76 0x63 0x43|字符`avcC`
-0x01|configurationVersion
-0x42|AVCProfileIndication
-0x00|profile_compatibility
-0x1F|AVCLevelIndication
-0xFF|6bit的reserved + 2bit的lengthSizeMinusOne
-0xE1|3bit的reserved + 5bit的numOfSequenceParameterSets
-0x00 0x09|`SPS`的长度
-0x67 0x42 0x00 0x1f 0xe9 0x02 0xc1 0x2c 0x80|`SPS`的内容（和长度对应）
-0x01|numOfPictureParameterSets
-0x00 0x04|`PPS`的长度
-0x68 0xce 0x06 0xf2|`PPS`的内容（和长度对应）
-
 ## **FlvPackager**
 
 {% codeblock lang:java %}
 public static class FlvPackager {
-    public static final int FLV_TAG_LENGTH = 11;
-    public static final int FLV_VIDEO_TAG_LENGTH = 5;
-    public static final int FLV_AUDIO_TAG_LENGTH = 2;
+    public static final int FLV_TAG_HEADER_LENGTH = 11;
+    public static final int FLV_VIDEO_TAG_HEADER_LENGTH = 5;
+    public static final int FLV_AUDIO_TAG_HEADER_LENGTH = 2;
     public static final int FLV_TAG_FOOTER_LENGTH = 4;
     public static final int NALU_HEADER_LENGTH = 4;
 
-    public static void fillFlvVideoTag(byte[] dst, int pos, boolean isAvcSequenceHeader, boolean isIdr, int readDataLength) {
-        // 高 4 位表示 FrameType：1 为 I 帧，2 为 P 帧
+    public static void setAvcTag(byte[] dst, int pos, boolean isAvcSequenceHeader, boolean isIdr, int readDataLength) {
+        // 高 4 位表示 FrameType：1 为关键帧，2 为非关键帧
         // 低 4 位表示 CodecID：7 为 AVC
         dst[pos] = isIdr ? (byte) 0x17 : (byte) 0x27;// FrameType | CodecID
-        // 当数据为 AVC 头时没有 video/audio 存在，否则，有 video 存在
+        // 0 为 AVCDecoderConfigurationRecord，1 为 AVC NALU
         dst[pos + 1] = isAvcSequenceHeader ? (byte) 0x00 : (byte) 0x01;// AVCPacketType
         dst[pos + 2] = (byte) 0x00;// CompositionTime
         dst[pos + 3] = (byte) 0x00;// CompositionTime
         dst[pos + 4] = (byte) 0x00;// CompositionTime
         if (!isAvcSequenceHeader) {
-            // 将 readDataLength 分为 4 字节
-            ByteArrayTools.intToByteArrayFull(dst, pos + 5, readDataLength);
+            // 4 个字节的 readDataLength
+            ByteArrayTools.intToFourByteArray(dst, pos + 5, readDataLength);
         }
     }
 
-    public static void fillFlvAudioTag(byte[] dst, int pos, boolean isAACSequenceHeader) {
+    public static void setAacTag(byte[] dst, int pos, boolean isAACSequenceHeader) {
         /**
          * UB[4] 10=AAC
          * UB[2] 3=44kHz
@@ -307,60 +285,19 @@ public static class FlvPackager {
 }
 {% endcodeblock %}
 
-### **fillFlvVideoTag(byte[] dst, int pos, boolean isAVCSequenceHeader, boolean isIDR, int readDataLength)**
+### **setAvcTag(byte[] dst, int pos, boolean isAvcSequenceHeader, boolean isIdr, int readDataLength)**
 
-插入`FLV`video 类型的`TAG`。
+按`FLV`要求的`AVC`的`TAG body`格式编码。
 
-### **fillFlvAudioTag(byte[] dst, int pos, boolean isAACSequenceHeader)**
+### **setAacTag(byte[] dst, int pos, boolean isAACSequenceHeader)**
 
-插入`FLV`audio 类型的`TAG`。
-
-1、AVC & I帧 & P帧 & B帧 & IDR 图像
-
->**AVC**：对于一段变化不大图像画面，我们可以先编码出一个完整的图像A1帧，随后的A2帧就不编码全部图像，只写入与A1帧的差别，这样A2帧的大小就只有A1帧的1/10或更小！A2帧之后的A3帧如果变化不大，我们可以继续以参考A2的方式编码A3帧，这样循环下去。这段图像我们称为一个序列（序列就是有相同特点的一段数据）。
-当某个图像与之前的图像变化很大，无法参考前面的帧来生成，那我们就结束上一个序列，开始下一个序列，也就是对这个图像生成一个完整帧B1，随后的图像就参考B1生成，只写入与B1的差别内容。
-
->**I帧**：完整编码的帧。
-
->**P帧**：参考之前的`I帧`或`P帧`生成的只包含差异部分编码的帧叫`P帧`。
-
->**B帧**：参考前后的帧编码的帧叫`B帧`。
-
->**IDR 图像**：一个序列的第一个图像叫做`IDR图像`（立即刷新图像），`IDR图像`都是`I帧`图像。`IDR图像`用于解码的重同步，当解码器解码到`IDR 图像`时，立即将参考帧队列清空，将已解码的数据全部输出或抛弃，重新查找参数集，开始一个新的序列。这样，如果前一个序列出现重大错误，在这里可以重新同步。`IDR图像`之后的图像永远不会使用`IDR图像`之前的数据来解码。
-
-2、从 FLV 报文看报头数据结构
-
-![](http://otkw6sse5.bkt.clouddn.com/ScreenRecorder-%E4%BB%A3%E7%A0%81%E8%A7%A3%E8%AF%BB1519666280252_3.png)
-
-数据|数据位置的说明
--|-
-0x46 0x4c 0x56|字符`FLV`
-0x01|版本号
-0x05|右起第 0 位和第 2 位分别表示 video 与 audio 存在的情况（1 表示存在，0 表示不存在）
-0x00 0x00 0x00 0x09|报头数据长度
-
-3、NALU key-value
-
-key|value
--|-
-NALU_TYPE_SLICE|1
-NALU_TYPE_DPA|2
-NALU_TYPE_DPB|3
-NALU_TYPE_DPC|4
-NALU_TYPE_IDR|5
-NALU_TYPE_SEI|6
-NALU_TYPE_SPS|7
-NALU_TYPE_PPS|8
-NALU_TYPE_AUD|9
-NALU_TYPE_EOSEQ|10
-NALU_TYPE_EOSTREAM|11
-NALU_TYPE_FILL|12
+按`FLV`要求的`AAC`的`TAG body`格式编码。
 
 ---
 
 # **ScreenRecorder**
 
-按照服务端接收格式整理数据。
+获取数据，并按照`FLV`封装格式编码。
 
 {% codeblock lang:java %}
 public class ScreenRecorder extends Thread {
@@ -371,7 +308,7 @@ public class ScreenRecorder extends Thread {
     private static final int IFRAME_INTERVAL = 2; // 2s between I-frames
     private static final int TIMEOUT_US = 10000;
 
-    private RESFlvDataCollecter mDataCollecter;
+    private ResFlvDataCollecter mDataCollecter;
     private int mWidth;
     private int mHeight;
     private int mBitRate;
@@ -385,7 +322,7 @@ public class ScreenRecorder extends Thread {
     private MediaCodec.BufferInfo bufferInfo = new MediaCodec.BufferInfo();
     private VirtualDisplay virtualDisplay;
 
-    public ScreenRecorder(RESFlvDataCollecter dataCollecter, int width, int height, int bitRate, int dpi, MediaProjection mediaProjection) {
+    public ScreenRecorder(ResFlvDataCollecter dataCollecter, int width, int height, int bitRate, int dpi, MediaProjection mediaProjection) {
         super(TAG);
         mDataCollecter = dataCollecter;
         mWidth = width;
@@ -478,9 +415,9 @@ public class ScreenRecorder extends Thread {
                         //
                         ByteBuffer realData = mediaCodec.getOutputBuffer(eobIndex);
                         if (realData != null) {
-                            realData.position(bufferInfo.offset + 4);// TODO 为什么 + 4？？
+                            realData.position(bufferInfo.offset + 4);// 跳过用于表示上个 TAG 大小的 4 个字节
                             realData.limit(bufferInfo.offset + bufferInfo.size);
-                            sendRealData((bufferInfo.presentationTimeUs / 1000) - startTime, realData);
+                            sendAvcData((bufferInfo.presentationTimeUs / 1000) - startTime, realData);
                         }
                     }
                     mediaCodec.releaseOutputBuffer(eobIndex, false);
@@ -490,41 +427,41 @@ public class ScreenRecorder extends Thread {
     }
 
     private void sendAvcDecoderConfigurationRecord(long timeMs, MediaFormat format) {
-        byte[] avcDecoderConfigurationRecord = Packager.H264Packager.generateAvcDecoderConfigurationRecord(format);
-        int packetLen = Packager.FlvPackager.FLV_VIDEO_TAG_LENGTH + avcDecoderConfigurationRecord.length;
+        byte[] avcDecoderConfigurationRecord = Packager.AvcPackager.generateAvcDecoderConfigurationRecord(format);
+        int packetLen = Packager.FlvPackager.FLV_VIDEO_TAG_HEADER_LENGTH + avcDecoderConfigurationRecord.length;
         byte[] finalBuff = new byte[packetLen];
-        // 在 finalBuff 数组最前面插入 5 个字节的 FLV video TAG
-        Packager.FlvPackager.fillFlvVideoTag(finalBuff, 0, true, true, avcDecoderConfigurationRecord.length);
+        // 在 finalBuff 数组最前面插入 5 个字节的 FLV video TAG header
+        Packager.FlvPackager.setAvcTag(finalBuff, 0, true, true, avcDecoderConfigurationRecord.length);
         // 将 avcDecoderConfigurationRecord 数组的数据拼接到 finalBuff 数组后面
-        System.arraycopy(avcDecoderConfigurationRecord, 0, finalBuff, Packager.FlvPackager.FLV_VIDEO_TAG_LENGTH, avcDecoderConfigurationRecord.length);
-        RESFlvData resFlvData = new RESFlvData();
+        System.arraycopy(avcDecoderConfigurationRecord, 0, finalBuff, Packager.FlvPackager.FLV_VIDEO_TAG_HEADER_LENGTH, avcDecoderConfigurationRecord.length);
+        ResFlvData resFlvData = new ResFlvData();
         resFlvData.droppable = false;
         resFlvData.byteBuffer = finalBuff;
         resFlvData.size = finalBuff.length;
         resFlvData.dts = (int) timeMs;
-        resFlvData.flvTagType = FLV_RTMP_PACKET_TYPE_VIDEO;
-        resFlvData.videoFrameType = RESFlvData.NALU_TYPE_IDR;
-        mDataCollecter.collect(resFlvData, FLV_RTMP_PACKET_TYPE_VIDEO);
+        resFlvData.flvTagType = FLV_TAGTYPE_VIDEO;
+        resFlvData.videoFrameType = ResFlvData.AVC_NALU_TYPE_IDR;
+        mDataCollecter.collect(resFlvData, FLV_TAGTYPE_VIDEO);
     }
 
-    private void sendRealData(long timeMs, ByteBuffer realData) {
-        int realDataLength = realData.remaining();
-        int packetLen = Packager.FlvPackager.FLV_VIDEO_TAG_LENGTH + Packager.FlvPackager.NALU_HEADER_LENGTH + realDataLength;
+    private void sendAvcData(long timeMs, ByteBuffer data) {
+        int realDataLength = data.remaining();
+        int packetLen = Packager.FlvPackager.FLV_VIDEO_TAG_HEADER_LENGTH + Packager.FlvPackager.NALU_HEADER_LENGTH + realDataLength;
         byte[] finalBuff = new byte[packetLen];
-        // 将 realData 数组的数据放到 finalBuff 数组的第 Packager.FlvPackager.FLV_VIDEO_TAG_LENGTH+Packager.FlvPackager.NALU_HEADER_LENGTH+1 个位置到结束
-        realData.get(finalBuff, Packager.FlvPackager.FLV_VIDEO_TAG_LENGTH + Packager.FlvPackager.NALU_HEADER_LENGTH, realDataLength);
-        // 获取 NALU 类型，计算后得 5 表示 NALU 类型是 NALU_TYPE_IDR
-        int frameType = finalBuff[Packager.FlvPackager.FLV_VIDEO_TAG_LENGTH + Packager.FlvPackager.NALU_HEADER_LENGTH] & 0x1F;
-        // 在 finalBuff 数组最前面插入 9 个字节的 FLV video TAG
-        Packager.FlvPackager.fillFlvVideoTag(finalBuff, 0, false, frameType == 5, realDataLength);
-        RESFlvData resFlvData = new RESFlvData();
+        // 将 data 数组的数据放到 finalBuff 数组的第 Packager.FlvPackager.FLV_VIDEO_TAG_HEADER_LENGTH+Packager.FlvPackager.NALU_HEADER_LENGTH+1 个位置到结束
+        data.get(finalBuff, Packager.FlvPackager.FLV_VIDEO_TAG_HEADER_LENGTH + Packager.FlvPackager.NALU_HEADER_LENGTH, realDataLength);
+        // 获取 NALU 类型，计算后得 5 表示 NALU 类型是 AVC_NALU_TYPE_IDR
+        int frameType = finalBuff[Packager.FlvPackager.FLV_VIDEO_TAG_HEADER_LENGTH + Packager.FlvPackager.NALU_HEADER_LENGTH] & 0x1F;
+        // 在 finalBuff 数组最前面插入 9 个字节的 FLV video TAG（含 5 个字节的 header 和 4 个字节的 length）
+        Packager.FlvPackager.setAvcTag(finalBuff, 0, false, frameType == 5, realDataLength);
+        ResFlvData resFlvData = new ResFlvData();
         resFlvData.droppable = true;
         resFlvData.byteBuffer = finalBuff;
         resFlvData.size = finalBuff.length;
         resFlvData.dts = (int) timeMs;
-        resFlvData.flvTagType = FLV_RTMP_PACKET_TYPE_VIDEO;
+        resFlvData.flvTagType = FLV_TAGTYPE_VIDEO;
         resFlvData.videoFrameType = frameType;
-        mDataCollecter.collect(resFlvData, FLV_RTMP_PACKET_TYPE_VIDEO);
+        mDataCollecter.collect(resFlvData, FLV_TAGTYPE_VIDEO);
     }
 
     public boolean getStatus() {
@@ -543,17 +480,340 @@ public class ScreenRecorder extends Thread {
 
 ## **recordVirtualDisplay()**
 
-获取已解码的输出缓冲的索引，或者一个状态值。当是状态值`MediaCodec.INFO_OUTPUT_FORMAT_CHANGED`时，生成`AVC`序列头部，插入`FLV`video 类型的`TAG`，并发送。否则，直接将数据插入`FLV`video 类型的`TAG`并发送。
+获取已解码的输出缓冲的索引，或者一个状态值。当是状态值`MediaCodec.INFO_OUTPUT_FORMAT_CHANGED`时，生成并发送`AVC`的`AVCDecoderConfigurationRecord`；否则，生成并发送`AVC`数据。
 
-## **sendAVCDecoderConfigurationRecord(long tms, MediaFormat format)**
+## **sendAvcDecoderConfigurationRecord(long timeMs, MediaFormat format)**
 
-生成`AVC`序列头部，插入`FLV`video 类型的`TAG`，并发送。
+生成并发送`AVC`的`AVCDecoderConfigurationRecord`。
 
-## **sendRealData(long tms, ByteBuffer realData)**
+## **sendAvcData(long timeMs, ByteBuffer data)**
 
-将数据插入`FLV`video 类型的`TAG`并发送。
+生成并发送`AVC`数据。
 
 ---
+
+# **FlvMetaData**
+
+按`FLV`要求的`onMetaData`格式编码。
+
+{% codeblock lang:Java %}
+    public class FlvMetaData {
+        private static final String NAME = "onMetaData";
+        private static final int CODEC_ID_AAC = 7;
+        private static final int CODEC_ID_AVC = 10;
+        private static final int TYPE_NUMBER = 0;
+        private static final int TYPE_STRING = 2;
+        private static final int TYPE_ECMA_ARRAY = 8;
+        private static final int EMPTY_SIZE = 21;
+        private static final byte[] END_MARKER = {0x00, 0x00, 0x09};
+    
+        private int dataSize;
+        private byte[] metaData;
+        private ArrayList<byte[]> metaDataList;
+        private int pointer;
+    
+        public FlvMetaData() {
+            metaDataList = new ArrayList<>();
+            dataSize = 0;
+        }
+    
+        public FlvMetaData(ResCoreParameters parameters) {
+            this();
+            // audio
+            setProperty("audiocodecid", CODEC_ID_AAC);
+            switch (parameters.mediacodecAACBitRate) {
+                case 32 * 1024:
+                    setProperty("audiodatarate", 32);
+                    break;
+                case 48 * 1024:
+                    setProperty("audiodatarate", 48);
+                    break;
+                case 64 * 1024:
+                    setProperty("audiodatarate", 64);
+                    break;
+                default:
+                    LogTools.e("不支持的 audiodatarate: " + parameters.mediacodecAACBitRate);
+                    break;
+            }
+            switch (parameters.mediacodecAACSampleRate) {
+                case 44100:
+                    setProperty("audiosamplerate", 44100);
+                    break;
+                default:
+                    LogTools.e("不支持的 audiosamplerate: " + parameters.mediacodecAACSampleRate);
+                    break;
+            }
+            // video
+            setProperty("videocodecid", CODEC_ID_AVC);
+            setProperty("framerate", parameters.mediacodecAVCFrameRate);
+            setProperty("width", parameters.videoWidth);
+            setProperty("height", parameters.videoHeight);
+        }
+    
+        private void setProperty(String key, int value) {
+            addProperty(toFlvBytes(key), (byte) TYPE_NUMBER, toFlvBytes(value));
+        }
+    
+        private void setProperty(String key, String value) {
+            addProperty(toFlvBytes(key), (byte) TYPE_STRING, toFlvBytes(value));
+        }
+    
+        private void addProperty(byte[] key, byte dataType, byte[] value) {
+            int propertySize = key.length + 1 + value.length;
+            byte[] property = new byte[propertySize];
+    
+            // property 数组的前 key.length 个元素是 key 数组
+            System.arraycopy(key, 0, property, 0, key.length);
+            // property 数组的第 key.length+1 个元素是 dataType
+            property[key.length] = dataType;
+            // property 数组的后 value.length 个元素是 value 数组
+            System.arraycopy(value, 0, property, key.length + 1, value.length);
+    
+            metaDataList.add(property);
+            dataSize += propertySize;
+        }
+    
+        /**
+         * 将 double 类型的值转为 8 字节的数组
+         *
+         * @param value
+         * @return
+         */
+        private byte[] toFlvBytes(double value) {
+            long l = Double.doubleToLongBits(value);
+            return toUI(l, 8);
+        }
+    
+        /**
+         * 将 String 类型的值转为 值长度+2 字节的数组，其中前 2 个字节表示数组的长度，后面的是数据
+         *
+         * @param value
+         * @return
+         */
+        private byte[] toFlvBytes(String value) {
+            byte[] bytes = new byte[value.length() + 2];
+            // bytes 数组的前 2 个元素表示 value 的长度
+            System.arraycopy(toUI(value.length(), 2), 0, bytes, 0, 2);
+            // bytes 数组第 3 个元素到最后一个元素是数据
+            System.arraycopy(value.getBytes(), 0, bytes, 2, value.length());
+            return bytes;
+        }
+    
+        /**
+         * 将 value 转为指定字节数的数组
+         *
+         * @param value
+         * @param length
+         * @return
+         */
+        private byte[] toUI(long value, int length) {
+            byte[] bytes = new byte[length];
+            for (int i = 0; i < length; i++) {
+                bytes[length - 1 - i] = (byte) (value >> (8 * i) & 0xff);
+            }
+            return bytes;
+        }
+    
+        /**
+         * 构建 SCRIPT TAG
+         *
+         * @return
+         */
+        public byte[] getMetaData() {
+            metaData = new byte[dataSize + EMPTY_SIZE];
+            pointer = 0;
+            // 设置下一个内容的类型
+            addByte(TYPE_STRING);// 1 个字节
+            addByteArray(toFlvBytes(NAME));// 12 个字节
+            // 设置下一个内容的类型
+            addByte(TYPE_ECMA_ARRAY);// 1 个字节
+            addByteArray(toUI(metaDataList.size(), 4));// 4 个字节
+            for (byte[] property : metaDataList) {
+                addByteArray(property);// property长度 个字节
+            }
+            addByteArray(END_MARKER);// 3 个字节
+            return metaData;
+        }
+    
+        private void addByte(int value) {
+            metaData[pointer] = (byte) value;
+            pointer++;
+        }
+    
+        private void addByteArray(byte[] value) {
+            System.arraycopy(value, 0, metaData, pointer, value.length);
+            pointer += value.length;
+        }
+    }
+{% endcodeblock %}
+
+---
+
+# **screenrecorderrtmp**
+
+通过和`librtmp`C库交互，实现数据流读/写。
+
+{% codeblock lang:C %}
+#include <jni.h>
+#include <screenrecorderrtmp.h>
+#include <malloc.h>
+#include "rtmp.h"
+
+/*
+ * Class:     net_yrom_screenrecorder_rtmp_RtmpClient
+ * Method:    open
+ * Signature: (Ljava/lang/String;Z)J
+ */
+JNIEXPORT jlong JNICALL Java_net_yrom_screenrecorder_rtmp_RtmpClient_open(JNIEnv * env, jobject thiz, jstring url_, jboolean isPublishMode) {
+ 	LOGD("Java_net_yrom_screenrecorder_rtmp_RtmpClient_open(%s, %b)", url_, isPublishMode);
+   	const char *url = (*env)->GetStringUTFChars(env, url_, 0);
+
+    // 创建一个 RTMP 会话的句柄
+   	RTMP* rtmp = RTMP_Alloc();
+   	if (rtmp == NULL) {
+   		LOGD("rtmp == NULL");
+   		return NULL;
+   	}
+   	// 初始化句柄
+   	RTMP_Init(rtmp);
+
+    // 设置参数
+   	int ret = RTMP_SetupURL(rtmp, url);
+   	if (!ret) {
+   	    // 清理会话
+   		RTMP_Free(rtmp);
+   		rtmp = NULL;
+   		LOGD("RTMP_SetupURL: %d", ret);
+   		return NULL;
+   	}
+
+   	if (isPublishMode) {
+   	    // 设置可写
+   		RTMP_EnableWrite(rtmp);
+   	}
+
+    // 建立 RTMP 链接中的网络连接
+   	ret = RTMP_Connect(rtmp, NULL);
+   	if (!ret) {
+   	    // 清理会话
+   		RTMP_Free(rtmp);
+   		rtmp = NULL;
+   		LOGD("RTMP_Connect: %d", ret);
+   		return NULL;
+   	}
+
+    // 建立 RTMP 链接中的网络流
+   	ret = RTMP_ConnectStream(rtmp, 0);
+   	if (!ret) {
+   	    // 关闭 RTMP 链接
+   		RTMP_Close(rtmp);
+   	    // 清理会话
+   		RTMP_Free(rtmp);
+   		rtmp = NULL;
+   		LOGD("RTMP_ConnectStream: %d", ret);
+   		return NULL;
+   	}
+
+   	(*env)->ReleaseStringUTFChars(env, url_, url);
+   	LOGD("RTMP_OPENED");
+   	return rtmp;
+}
+
+/*
+ * Class:     net_yrom_screenrecorder_rtmp_RtmpClient
+ * Method:    read
+ * Signature: (J[BII)I
+ */
+JNIEXPORT jint JNICALL Java_net_yrom_screenrecorder_rtmp_RtmpClient_read(JNIEnv * env, jobject thiz, jlong rtmp, jbyteArray data_, jint offset, jint size) {
+ 	LOGD("Java_net_yrom_screenrecorder_rtmp_RtmpClient_read(%d, %d, %d)", rtmp, offset, size);
+ 	char* data = malloc(size*sizeof(char));
+ 	int readCount = RTMP_Read((RTMP*)rtmp, data, size);
+ 	if (readCount > 0) {
+        (*env)->SetByteArrayRegion(env, data_, offset, readCount, data);
+    }
+    free(data);
+    return readCount;
+}
+
+/*
+ * Class:     net_yrom_screenrecorder_rtmp_RtmpClient
+ * Method:    write
+ * Signature: (J[BIII)I
+ */
+JNIEXPORT jint JNICALL Java_net_yrom_screenrecorder_rtmp_RtmpClient_write(JNIEnv * env, jobject thiz, jlong rtmp, jbyteArray data, jint size, jint type, jint ts) {
+ 	LOGD("Java_net_yrom_screenrecorder_rtmp_RtmpClient_write(%d, %d, %d, %d)", rtmp, size, type, ts);
+ 	RTMPPacket *packet = (RTMPPacket*)malloc(sizeof(RTMPPacket));
+ 	RTMPPacket_Alloc(packet, size);
+ 	RTMPPacket_Reset(packet);
+ 	// 设置 Chunk Stream ID
+    if (type == RTMP_PACKET_TYPE_INFO) {// metadata
+    	packet->m_nChannel = 0x03;// 自定义 Chunk Stream ID
+    } else if (type == RTMP_PACKET_TYPE_VIDEO) {// video
+    	packet->m_nChannel = 0x04;// 自定义 Chunk Stream ID
+    } else if (type == RTMP_PACKET_TYPE_AUDIO) {// audio
+    	packet->m_nChannel = 0x05;// 自定义 Chunk Stream ID
+    } else {
+    	packet->m_nChannel = -1;
+    }
+
+    // 设置 Stream ID
+    packet->m_nInfoField2  =  ((RTMP*)rtmp)->m_stream_id;
+ 	LOGD("((RTMP*)rtmp)->m_stream_id: %d", ((RTMP*)rtmp)->m_stream_id);
+
+ 	jbyte *buffer = (*env)->GetByteArrayElements(env, data, NULL);
+    memcpy(packet->m_body, buffer, size);
+    // 设置 Message Header 的格式和长度：0
+    packet->m_headerType = RTMP_PACKET_SIZE_LARGE;
+    // 设置是否使用绝对时间戳：不使用
+    packet->m_hasAbsTimestamp = FALSE;
+    // 设置时间戳
+    packet->m_nTimeStamp = ts;
+    // 设置包类型
+    packet->m_packetType = type;
+    // 设置消息长度
+    packet->m_nBodySize  = size;
+
+    int ret = RTMP_SendPacket((RTMP*)rtmp, packet, 0);
+    if (!ret) {
+    	LOGD("end write error: %d", ret);
+		return ret;
+    }else{
+    	LOGD("end write success");
+		return 0;
+    }
+
+    RTMPPacket_Free(packet);
+    free(packet);
+    (*env)->ReleaseByteArrayElements(env, data, buffer, 0);
+}
+
+/*
+ * Class:     net_yrom_screenrecorder_rtmp_RtmpClient
+ * Method:    close
+ * Signature: (J)I
+ */
+JNIEXPORT jint JNICALL Java_net_yrom_screenrecorder_rtmp_RtmpClient_close(JNIEnv * env, jlong rtmp, jobject thiz) {
+ 	LOGD("Java_net_yrom_screenrecorder_rtmp_RtmpClient_close(%d)", rtmp);
+ 	RTMP_Close((RTMP*)rtmp);
+ 	RTMP_Free((RTMP*)rtmp);
+ 	return 0;
+}
+
+/*
+ * Class:     net_yrom_screenrecorder_rtmp_RtmpClient
+ * Method:    getIpAddr
+ * Signature: (J)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_net_yrom_screenrecorder_rtmp_RtmpClient_getIpAddr(JNIEnv * env, jobject thiz, jlong rtmp) {
+ 	LOGD("Java_net_yrom_screenrecorder_rtmp_RtmpClient_getIpAddr(%d)", rtmp);
+	if(rtmp!=0){
+		RTMP* r= (RTMP*)rtmp;
+		return (*env)->NewStringUTF(env, r->ipaddr);
+	}else {
+		return (*env)->NewStringUTF(env, "");
+	}
+}
+{% endcodeblock %}
 
 # **RtmpStreamingSender**
 
@@ -575,24 +835,23 @@ public class RtmpStreamingSender implements Runnable {
 
     private final Object lock = new Object();
     private static final int MAX_QUEUE_CAPACITY = 50;
-    private LinkedBlockingDeque<RESFlvData> frameQueue = new LinkedBlockingDeque<>(MAX_QUEUE_CAPACITY);
+    private LinkedBlockingDeque<ResFlvData> frameQueue = new LinkedBlockingDeque<>(MAX_QUEUE_CAPACITY);
     private AtomicBoolean quit = new AtomicBoolean(false);
-    private FLvMetaData fLvMetaData;
-    private RESCoreParameters coreParameters;
+    private FlvMetaData flvMetaData;
+    private ResCoreParameters coreParameters;
 
     private long jniRtmpPointer = 0;
-    private int maxQueueLength = 50;
     private int writeMsgNum = 0;
 
     public RtmpStreamingSender() {
-        coreParameters = new RESCoreParameters();
-        coreParameters.mediacodecAACBitRate = RESFlvData.AAC_BITRATE;
-        coreParameters.mediacodecAACSampleRate = RESFlvData.AAC_SAMPLE_RATE;
-        coreParameters.mediacodecAVCFrameRate = RESFlvData.FPS;
-        coreParameters.videoWidth = RESFlvData.VIDEO_WIDTH;
-        coreParameters.videoHeight = RESFlvData.VIDEO_HEIGHT;
+        coreParameters = new ResCoreParameters();
+        coreParameters.mediacodecAACBitRate = ResFlvData.AAC_BITRATE;
+        coreParameters.mediacodecAACSampleRate = ResFlvData.AAC_SAMPLE_RATE;
+        coreParameters.mediacodecAVCFrameRate = ResFlvData.FPS;
+        coreParameters.videoWidth = ResFlvData.VIDEO_WIDTH;
+        coreParameters.videoHeight = ResFlvData.VIDEO_HEIGHT;
 
-        fLvMetaData = new FLvMetaData(coreParameters);
+        flvMetaData = new FlvMetaData(coreParameters);
     }
 
     @Override
@@ -601,18 +860,21 @@ public class RtmpStreamingSender implements Runnable {
             if (frameQueue.size() > 0) {
                 switch (state) {
                     case STATE.START:
-                        LogTools.d("RESRtmpSender,WorkHandler,tid=" + Thread.currentThread().getId());
                         if (TextUtils.isEmpty(mRtmpAddr)) {
                             LogTools.e("rtmp address is null!");
                             break;
                         }
+
+                        // 建立 RTMP 链接
                         jniRtmpPointer = RtmpClient.open(mRtmpAddr, true);
                         if (jniRtmpPointer != 0) {
+                            // 获取地址
                             String serverIpAddr = RtmpClient.getIpAddr(jniRtmpPointer);
-                            LogTools.d("server ip address = " + serverIpAddr);
+                            LogTools.d("server ip address: " + serverIpAddr);
 
-                            byte[] MetaData = fLvMetaData.getMetaData();
-                            RtmpClient.write(jniRtmpPointer, MetaData, MetaData.length, RESFlvData.FLV_RTMP_PACKET_TYPE_INFO, 0);
+                            // 发送 onMetaData TAG
+                            byte[] metaData = flvMetaData.getMetaData();
+                            RtmpClient.write(jniRtmpPointer, metaData, metaData.length, ResFlvData.FLV_TAGTYPE_SCRIPT_DATA, 0);
 
                             state = STATE.RUNNING;
                         }
@@ -621,33 +883,39 @@ public class RtmpStreamingSender implements Runnable {
                         synchronized (lock) {
                             --writeMsgNum;
                         }
-                        RESFlvData flvData = frameQueue.pop();
-                        if (writeMsgNum >= (maxQueueLength * 2 / 3) && flvData.flvTagType == RESFlvData.FLV_RTMP_PACKET_TYPE_VIDEO && flvData.droppable) {
+                        ResFlvData flvData = frameQueue.pop();
+
+                        // 如果发送队列中的数据过多，在条件满足的情况下，忽略这个数据
+                        if (writeMsgNum >= (MAX_QUEUE_CAPACITY * 2 / 3) && flvData.flvTagType == ResFlvData.FLV_TAGTYPE_VIDEO && flvData.droppable) {
                             LogTools.d("senderQueue is crowded, abort a frame");
                             break;
                         }
 
+                        // 发送 AVC TAG
                         int result = RtmpClient.write(jniRtmpPointer, flvData.byteBuffer, flvData.byteBuffer.length, flvData.flvTagType, flvData.dts);
                         if (result == 0) {
-                            if (flvData.flvTagType == RESFlvData.FLV_RTMP_PACKET_TYPE_VIDEO) {
-                                LogTools.d("video frame sent = " + flvData.size);
-                            } else {
-                                LogTools.d("audio frame sent = " + flvData.size);
+                            switch (flvData.flvTagType) {
+                                case ResFlvData.FLV_TAGTYPE_VIDEO:
+                                    LogTools.d("video frame sent: " + flvData.size);
+                                    break;
+                                case ResFlvData.FLV_TAGTYPE_AUDIO:
+                                    LogTools.d("audio frame sent: " + flvData.size);
+                                    break;
                             }
                         } else {
-                            LogTools.e("writeError = " + result);
+                            LogTools.e("write error: " + result);
                         }
-
                         break;
                     case STATE.STOPPED:
+                        // 关闭 RTMP 链接
                         result = RtmpClient.close(jniRtmpPointer);
-                        LogTools.e("close result = " + result);
+                        LogTools.d("close result: " + result);
                         break;
                 }
             }
         }
         int result = RtmpClient.close(jniRtmpPointer);
-        LogTools.e("close result = " + result);
+        LogTools.e("close result: " + result);
     }
 
     public void sendStart(String rtmpAddr) {
@@ -665,9 +933,9 @@ public class RtmpStreamingSender implements Runnable {
         state = STATE.STOPPED;
     }
 
-    public void sendFood(RESFlvData flvData, int type) {
+    public void sendFood(ResFlvData flvData, int type) {
         synchronized (lock) {
-            if (writeMsgNum <= maxQueueLength) {
+            if (writeMsgNum <= MAX_QUEUE_CAPACITY) {
                 frameQueue.add(flvData);
                 ++writeMsgNum;
             } else {
@@ -703,8 +971,8 @@ public class ScreenRecordActivity extends Activity implements View.OnClickListen
     private ScreenRecorder screenRecorder;
     private RtmpStreamingSender streamingSender;
     private ExecutorService executorService;
-    private RESAudioClient audioClient;
-    private RESCoreParameters coreParameters;
+    private ResAudioClient audioClient;
+    private ResCoreParameters coreParameters;
     private ServiceConnection connection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
@@ -782,8 +1050,8 @@ public class ScreenRecordActivity extends Activity implements View.OnClickListen
             return;
         }
 
-        coreParameters = new RESCoreParameters();
-        audioClient = new RESAudioClient(coreParameters);
+        coreParameters = new ResCoreParameters();
+        audioClient = new ResAudioClient(coreParameters);
         if (!audioClient.prepare()) {
             LogTools.d("!!!!!audioClient.prepare() failed");
             return;
@@ -791,13 +1059,13 @@ public class ScreenRecordActivity extends Activity implements View.OnClickListen
 
         streamingSender = new RtmpStreamingSender();
         streamingSender.sendStart(rtmpAddr);
-        RESFlvDataCollecter collecter = new RESFlvDataCollecter() {
+        ResFlvDataCollecter collecter = new ResFlvDataCollecter() {
             @Override
-            public void collect(RESFlvData flvData, int type) {
+            public void collect(ResFlvData flvData, int type) {
                 streamingSender.sendFood(flvData, type);
             }
         };
-        screenRecorder = new ScreenRecorder(collecter, RESFlvData.VIDEO_WIDTH, RESFlvData.VIDEO_HEIGHT, RESFlvData.VIDEO_BITRATE, 1, mediaProjection);
+        screenRecorder = new ScreenRecorder(collecter, ResFlvData.VIDEO_WIDTH, ResFlvData.VIDEO_HEIGHT, ResFlvData.VIDEO_BITRATE, 1, mediaProjection);
         screenRecorder.start();
         audioClient.start(collecter);
 
@@ -854,8 +1122,7 @@ public class ScreenRecordActivity extends Activity implements View.OnClickListen
 
 ## **onActivityResult(int requestCode, int resultCode, Intent data)**
 
-
-
+向输入框中的地址进行`RTMP`推流。
 
 ## **startScreenCapture()**
 
