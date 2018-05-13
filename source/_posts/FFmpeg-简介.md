@@ -12,6 +12,7 @@ copyright: true
 * 《FFmpeg 从入门到精通》
 * [Compile FFmpeg for Ubuntu, Debian, or Mint](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu "https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu")
 * [Ubuntu 16.04安装编译FFmpeg](https://www.linuxidc.com/Linux/2017-10/147769.htm "https://www.linuxidc.com/Linux/2017-10/147769.htm")
+* [在ubuntu16.04下测试ffplay程序](https://blog.csdn.net/ericbar/article/details/79382783 "https://blog.csdn.net/ericbar/article/details/79382783")
 
 ---
 
@@ -125,33 +126,43 @@ sudo apt-get install libmp3lame-dev
 sudo apt-get install libopus-dev
 {% endcodeblock %}
 
-## **编译**
+## **安装 SDL2**
+
+否则无法使用 ffplay 命令，使用时会报错：`The program 'ffplay' is currently not installed.`
+
+![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E7%AE%80%E4%BB%8B1526187550322_2.png)
+
+### **下载 SDL2 源代码**
+
+在 [SDL 官网](https://www.libsdl.org/download-2.0.php "https://www.libsdl.org/download-2.0.php")下载 SDL2
+
+![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E7%AE%80%E4%BB%8B1526187551920_4.png)
+
+### **编译 SDL2**
+
+1、解压缩 SDL2-2.0.8.tar.gz
+
+2、编译 SDL2
+
+{% codeblock lang:shell %}
+cd ~/Downloads/SDL2-2.0.8
+./configure
+make
+sudo make install
+{% endcodeblock %}
+
+## **编译 FFmpeg**
 
 {% codeblock lang:shell %}
 cd ~/ffmpeg_sources
 wget -O ffmpeg-snapshot.tar.bz2 https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
 tar xjvf ffmpeg-snapshot.tar.bz2
 cd ffmpeg
-PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./configure
-  --prefix="$HOME/ffmpeg_build"
-  --pkg-config-flags="--static"
-  --extra-cflags="-I$HOME/ffmpeg_build/include"
-  --extra-ldflags="-L$HOME/ffmpeg_build/lib"
-  --extra-libs="-lpthread -lm"
-  --bindir="$HOME/bin"
-  --enable-gpl
-  --enable-libaom
-  --enable-libass
-  --enable-libfdk-aac
-  --enable-libfreetype
-  --enable-libmp3lame
-  --enable-libopus
-  --enable-libvorbis
-  --enable-libvpx
-  --enable-libx264
-  --enable-libx265
-  --enable-nonfree
-PATH="$HOME/bin:$PATH" make
+PATH="$HOME/bin:$PATH"
+PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" 
+./configure --prefix="$HOME/ffmpeg_build" --pkg-config-flags="--static" --extra-cflags="-I$HOME/ffmpeg_build/include" --extra-ldflags="-L$HOME/ffmpeg_build/lib" --extra-libs="-lpthread -lm" --bindir="$HOME/bin" --enable-gpl --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libvpx --enable-libx264 --enable-nonfree
+PATH="$HOME/bin:$PATH"
+make
 sudo make install
 hash -r
 {% endcodeblock %}
@@ -161,6 +172,8 @@ hash -r
 {% codeblock lang:shell %}
 source ~/.profile
 {% endcodeblock %}
+
+**注：ffplay 命令需要手动配置 FFmpeg 环境变量并重启 PC**
 
 ## **查看 ffmpeg 版本**
 
