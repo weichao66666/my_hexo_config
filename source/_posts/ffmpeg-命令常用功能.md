@@ -197,6 +197,42 @@ ffmpeg -h filter=colorkey
 
 ## **文件操作部分**
 
+### **拆分出视频**
+
+1、输入命令：
+
+```shell
+ffmpeg -i sample.mp4 -vcodec copy -vbsf h264_mp4toannexb -an output.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD21.png)
+
+### **拆分出音频**
+
+1、输入命令：
+
+```shell
+ffmpeg -i sample.mp4 -acodec copy -vn output.aac
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD22.png)
+
+### **视频和音频合成**
+
+1、输入命令：
+
+```shell
+ffmpeg -i output.mp4 -i output.aac -vcodec copy -acodec copy -absf aac_adtstoasc test.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD23.png)
+
 ## **视频操作部分**
 
 ## **音频操作部分**
