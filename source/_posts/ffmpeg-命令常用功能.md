@@ -21,9 +21,9 @@ copyright: true
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -formats
-{% endcodeblock %}
+```
 
 2、输出结果（只截取了部分）：
 
@@ -41,9 +41,9 @@ ffmpeg -formats
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -encoders
-{% endcodeblock %}
+```
 
 2、输出结果（只截取了部分）：
 
@@ -61,9 +61,9 @@ ffmpeg -encoders
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -decoders
-{% endcodeblock %}
+```
 
 2、输出结果（只截取了部分）：
 
@@ -81,9 +81,9 @@ ffmpeg -decoders
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -filters
-{% endcodeblock %}
+```
 
 2、输出结果（只截取了部分）：
 
@@ -102,9 +102,9 @@ ffmpeg -filters
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -h muxer=flv
-{% endcodeblock %}
+```
 
 2、输出结果：
 
@@ -121,9 +121,9 @@ ffmpeg -h muxer=flv
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -h demuxer=flv
-{% endcodeblock %}
+```
 
 2、输出结果（只截取了部分）：
 
@@ -140,9 +140,9 @@ ffmpeg -h demuxer=flv
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -h encoder=h264
-{% endcodeblock %}
+```
 
 2、输出结果（只截取了部分）：
 
@@ -159,9 +159,9 @@ ffmpeg -h encoder=h264
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -h decoder=h264
-{% endcodeblock %}
+```
 
 2、输出结果：
 
@@ -178,9 +178,9 @@ ffmpeg -h decoder=h264
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -h filter=colorkey
-{% endcodeblock %}
+```
 
 2、输出结果：
 
@@ -232,6 +232,322 @@ ffmpeg -i output.mp4 -i output.aac -vcodec copy -acodec copy -absf aac_adtstoasc
 2、输出结果：
 
 ![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD23.png)
+
+### **切片**
+
+segment 参数：
+
+参数|类型|说明
+--|--
+reference_stream|字符串|切片参考用的 stream
+segment_format|字符串|切片文件格式
+segment_format_options|字符串|切片格式的私有操作参数
+segment_list|字符串|切片列表主文件名
+segment_list_flags|标签|m3u8 切片的存在形式：<br>live<br>cache
+segment_list_size|整数|列表文件的长度
+segment_list_type|标签|列表类型：<br>flat<br>csv<br>ext<br>ffconcat<br>m3u8<br>hls
+segment_atclocktime|布尔|时钟频率生效参数，启动定时切片间隔用
+segment_clocktime_offset|时间值|切片时钟偏移
+segment_clocktime_wrap_duration|时间值|切片时钟回滚 duration
+segment_time|字符串|切片的 duration
+segment_time_delta|时间值|用于设置切片变化时间值
+segment_times|字符串|设置切片的时间点
+segment_frames|字符串|设置切片的帧位置
+segment_wrap|整数|列表回滚阈值
+segment_list_entry_prefix|字符串|写文件列表时写入每个切片路径的前置路径
+segment_start_number|整数|列表中切片的起始基数
+strftime|布尔|设置切片名为生成切片的时间点
+break_non_keyframes|布尔|忽略关键帧，按照时间切片
+individual_header_trailer|布尔|默认在每个切片中都写入文件头和文件结束容器
+write_header_trailer|布尔|只在第一个文件写入文件头以及在最后一个文件写入文件结束容器
+reset_timestamps|布尔|每个切片都重新初始化时间戳
+initial_offset|时间值|设置初始化时间戳偏移
+
+#### **segment_format**
+
+HLS 切片格式是 MPEGTS，此处可以指定为其他格式，比如 MP4、FLV 等。
+切割出来的 MP4 切片文件的时间戳与上一个 MP4 的结束时间戳是连续的。
+
+1、输入命令：
+
+```shell
+ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 test_output-%d.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD31.png)
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD32.png)
+
+3、生成的文件：
+
+test_output-0.mp4～test_output-14.mp4
+
+#### **segment_list && segment_list_type**
+
+##### **ffconcat**
+
+生成 ffconcat 格式的文件索引列表。
+
+1、输入命令：
+
+```shell
+ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 -segment_list_type ffconcat -segment_list output.lst test-output-%d.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD33.png)
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD34.png)
+
+3、生成的文件：
+
+test_output-0.mp4～test_output-14.mp4
+output.lst
+
+4、output.lst 的内容：
+
+```xml
+ffconcat version 1.0
+file test-output-0.mp4
+file test-output-1.mp4
+file test-output-2.mp4
+file test-output-3.mp4
+file test-output-4.mp4
+file test-output-5.mp4
+file test-output-6.mp4
+file test-output-7.mp4
+file test-output-8.mp4
+file test-output-9.mp4
+file test-output-10.mp4
+file test-output-11.mp4
+file test-output-12.mp4
+file test-output-13.mp4
+file test-output-14.mp4
+```
+
+##### **flat**
+
+生成 FLAT 格式的文件索引列表。
+
+1、输入命令：
+
+```shell
+ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 -segment_list_type flat -segment_list output.txt test-output-%d.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD35.png)
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD36.png)
+
+3、生成的文件：
+
+test_output-0.mp4～test_output-14.mp4
+output.txt
+
+4、output.txt 的内容：
+
+```xml
+test-output-0.mp4
+test-output-1.mp4
+test-output-2.mp4
+test-output-3.mp4
+test-output-4.mp4
+test-output-5.mp4
+test-output-6.mp4
+test-output-7.mp4
+test-output-8.mp4
+test-output-9.mp4
+test-output-10.mp4
+test-output-11.mp4
+test-output-12.mp4
+test-output-13.mp4
+test-output-14.mp4
+```
+
+##### **csv**
+
+生成 CSV 格式的文件索引列表。
+
+1、输入命令：
+
+```shell
+ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 -segment_list_type csv -segment_list output.csv test-output-%d.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD37.png)
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD38.png)
+
+3、生成的文件：
+
+test_output-0.mp4～test_output-14.mp4
+output.csv
+
+4、output.csv 的内容：
+
+```xml
+test-output-0.mp4,0.000000,10.080000
+test-output-1.mp4,10.080000,16.680000
+test-output-2.mp4,16.680000,26.680000
+test-output-3.mp4,26.680000,36.680000
+test-output-4.mp4,36.680000,46.680000
+test-output-5.mp4,46.680000,56.680000
+test-output-6.mp4,56.680000,66.680000
+test-output-7.mp4,66.680000,71.200000
+test-output-8.mp4,71.200000,79.440000
+test-output-9.mp4,79.440000,89.440000
+test-output-10.mp4,89.440000,99.240000
+test-output-11.mp4,99.240000,109.240000
+test-output-12.mp4,109.240000,114.520000
+test-output-13.mp4,114.520000,124.520000
+test-output-14.mp4,124.520000,126.520000
+```
+
+##### **m3u8**
+
+生成 M3U8 格式的文件索引列表。
+
+1、输入命令：
+
+```shell
+ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 -segment_list_type m3u8 -segment_list output.m3u8 test-output-%d.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD39.png)
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD40.png)
+
+3、生成的文件：
+
+test_output-0.mp4～test_output-14.mp4
+output.m3u8
+
+4、output.m3u8 的内容：
+
+```xml
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-ALLOW-CACHE:YES
+#EXT-X-TARGETDURATION:11
+#EXTINF:10.080000,
+test-output-0.mp4
+#EXTINF:6.600000,
+test-output-1.mp4
+#EXTINF:10.000000,
+test-output-2.mp4
+#EXTINF:10.000000,
+test-output-3.mp4
+#EXTINF:10.000000,
+test-output-4.mp4
+#EXTINF:10.000000,
+test-output-5.mp4
+#EXTINF:10.000000,
+test-output-6.mp4
+#EXTINF:4.520000,
+test-output-7.mp4
+#EXTINF:8.240000,
+test-output-8.mp4
+#EXTINF:10.000000,
+test-output-9.mp4
+#EXTINF:9.800000,
+test-output-10.mp4
+#EXTINF:10.000000,
+test-output-11.mp4
+#EXTINF:5.280000,
+test-output-12.mp4
+#EXTINF:10.000000,
+test-output-13.mp4
+#EXTINF:2.000000,
+test-output-14.mp4
+#EXT-X-ENDLIST
+```
+
+#### **reset_timestamps**
+
+使每一片切片的时间戳归 0。
+
+1、输入命令：
+
+```shell
+ffmpeg -re -i guibu.flv -c copy -f segment -segment_format mp4 -reset_timestamps 1 test_output-%d.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD41.png)
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD42.png)
+
+3、生成的文件：
+
+test_output-0.mp4～test_output-22.mp4
+
+#### **segment_times**
+
+按照指定的时间点切片，比如第 1 分钟、第 2 分钟、第 3 分钟。
+
+1、输入命令：
+
+```shell
+ffmpeg -re -i guibu.flv -c copy -f segment -segment_format mp4 -segment_times 60,120,180 test_output-%d.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD43.png)
+
+3、生成的文件：
+
+test_output-0.mp4～test_output-2.mp4
+
+#### **ss**
+
+指定剪切开头部分。
+比如从一个视频文件的第 10 秒钟开始截取内容。
+
+1、输入命令：
+
+```shell
+ffmpeg -ss 10 -i guibu.flv -c copy output.ts
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD44.png)
+
+#### **t**
+
+指定视频总长度。
+比如只截取一个视频文件的前 10 秒。
+
+1、输入命令：
+
+```shell
+ffmpeg -i guibu.flv -c copy -t 10 -copyts output.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD45.png)
+
+#### **output_ts_offset**
+
+指定输出文件的 start_time。
+比如指定从第 120 秒开始，截取 10 秒的视频。
+
+1、输入命令：
+
+```shell
+ffmpeg -i guibu.flv -c copy -t 10 -output_ts_offset 120 output.mp4
+```
+
+2、输出结果：
+
+![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD46.png)
 
 ## **视频操作部分**
 
@@ -287,9 +603,9 @@ threads|整数|设置编解码工作的线程数
 
 1、输入命令：
 
-{% codeblock lang:shell %}
+```shell
 ffmpeg -i ~/sample.mkv -vcodec mpeg4 -b:v 200k -r 15 -an output.mp4
-{% endcodeblock %}
+```
 
 2、输出的信息：
 
