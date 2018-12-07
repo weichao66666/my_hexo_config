@@ -103,6 +103,6 @@ Android Studio 可以创建 Flutter 项目。
 
 2、运行
 
-![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Flutter-%E5%AD%A6%E4%B9%A0%EF%BC%880%EF%BC%8918.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Flutter-%E5%AD%A6%E4%B9%A0%EF%BC%880%EF%BC%8918.jpeg)
 
 ---
