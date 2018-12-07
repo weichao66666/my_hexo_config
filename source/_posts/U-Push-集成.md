@@ -297,8 +297,8 @@ private void initUPush() {
 
 2、效果
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%901.png)
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%902.jpeg)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%901.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%902.jpeg)
 
 ## **自定义通知栏图标**
 
@@ -433,8 +433,8 @@ private void initUPush() {
 
 3、效果
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%903.png)
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%904.jpeg)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%903.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%904.jpeg)
 
 ## **设置通知到达时响铃、震动、呼吸灯策略**
 
@@ -570,11 +570,11 @@ private void initUPush() {
 
 2、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%905.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%905.png)
 
 3、添加完成后，如果之前没有用户添加过该标签，现在就可以从控制台可以看到该标签并可以按该标签推送了：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%906.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%906.png)
 
 ### **获取服务器端的所有标签**
 
@@ -607,7 +607,7 @@ private void initUPush() {
 
 2、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%907.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%907.png)
 
 ### **删除标签**
 
@@ -640,7 +640,7 @@ private void initUPush() {
 
 2、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%908.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%908.png)
 
 ## **设置用户加权标签（Weighted Tag）**
 
@@ -679,7 +679,7 @@ private void initUPush() {
 
 2、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%909.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%909.png)
 
 ### **获取服务器端的所有加权标签**
 
@@ -721,7 +721,7 @@ private void initUPush() {
 
 2、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%9010.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%9010.png)
 
 ### **删除用户别名**
 
@@ -754,7 +754,7 @@ private void initUPush() {
 
 2、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%9011.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%9011.png)
 
 ## **自定义参数**
 
@@ -801,7 +801,7 @@ private void initUPush() {
 
 2、Logcat 查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%9012.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%9012.png)
 
 #### **dealWithCustomAction(Context context, UMessage msg)**
 
@@ -871,7 +871,7 @@ protected void onNewIntent(Intent intent) {
 
 3、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%9013.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%9013.png)
 
 ## **自定义资源包名**
 
@@ -919,7 +919,7 @@ pushAgent.disable(new IUmengCallback() {
 
 2、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%9014.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%9014.png)
 
 ## **开启推送**
 
@@ -943,14 +943,14 @@ pushAgent.enable(new IUmengCallback() {
 
 2、断点查看：
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%9015.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%9015.png)
 
 ## **支持多包名**
 
 若一个 APP 针对不同渠道有不同的包名，则可通过开通多包名支持一个 AppKey 对应多个包名发送消息。
 如果同一设备安装同一应用的不同包名的多个安装包，只有最后安装的应用可以正常收到推送消息。
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E9%9B%86%E6%88%9016.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E9%9B%86%E6%88%9016.png)
 
 ## **完全自定义处理（透传）**
 

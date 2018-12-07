@@ -69,8 +69,8 @@ ffmpeg -i guibu.mp4 -vcodec libx264 -preset ultrafast -b:v 2000k output.mp4
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2651.png)
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2652.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2651.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2652.png)
 
 #### **superfast**
 
@@ -106,8 +106,8 @@ ffmpeg -i guibu.mp4 -vcodec libx264 -tune zerolatency -b:v 2000k output_tune_zer
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2653.png)
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2654.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2653.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2654.png)
 
 ### **profile**
 
@@ -154,8 +154,8 @@ ffmpeg -i guibu.mp4 -vcodec libx264 -profile:v baseline -level 3.1 -s 352x288 -a
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2655.png)
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2656.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2655.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2656.png)
 
 #### **生成 high 视频**
 
@@ -167,8 +167,8 @@ ffmpeg -i guibu.mp4 -vcodec libx264 -profile:v high -level 3.1 -s 352x288 -an -y
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2657.png)
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2658.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2657.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2658.png)
 
 ### **sc_threshold**
 
@@ -182,7 +182,7 @@ ffmpeg -i guibu.mp4 -c:v libx264 -g 50 -t 60 -sc_threshold 0 output_sc_threshold
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2659.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H2659.png)
 
 ### **x264opts**
 
@@ -198,10 +198,10 @@ ffmpeg -i guibu.mp4 -c:v libx264 -x264opts "bframes=0" -g 50 -sc_threshold 0 out
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26510.png)
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26511.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26510.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26511.png)
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26512.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26512.png)
 
 #### **每两个 P 帧之间存放 3 个 B 帧**
 
@@ -213,7 +213,7 @@ ffmpeg -i guibu.mp4 -c:v libx264 -x264opts "bframes=3:b-adapt=0" -g 50 -sc_thres
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26513.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26513.png)
 
 ### **nal-hrd**
 
@@ -231,6 +231,6 @@ ffmpeg -i guibu.mp4 -c:v libx264 -x264opts "bframes=10:b-adapt=0" -b:v 1000k -ma
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26514.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BD%AF%E7%BC%96%E7%A0%81-H264%E3%80%81H26514.png)
 
 ---

@@ -51,7 +51,7 @@ ffmpeg -re -i sample.mp4 -c copy -f flv -rtmp_app live rtmp://publish.chinaffmpe
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%811.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%811.png)
 
 ### **拉流**
 
@@ -63,7 +63,7 @@ ffmpeg -rtmp_app live -i rtmp://publish.chinaffmpeg.com -c copy -f flv output.fl
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%812.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%812.png)
 
 ## **rtmp_playpath**
 
@@ -77,7 +77,7 @@ ffmpeg -re -i guibu.flv -c copy -f flv -rtmp_app live -rtmp_playpath class rtmp:
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%813.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%813.png)
 
 ### **拉流**
 
@@ -89,7 +89,7 @@ ffmpeg -rtmp_app live -rtmp_playpath class -i rtmp://publish.chinaffmpeg.com -c 
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%814.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%814.png)
 
 ## **省略 rtmp_app 和 rtmp_playpath 的写法**
 
@@ -103,7 +103,7 @@ ffmpeg -i guibu.flv -c copy -f flv rtmp://publish.chinaffmpeg.com/live/class
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%815.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%815.png)
 
 ### **拉流**
 
@@ -115,6 +115,6 @@ ffmpeg -i rtmp://publish.chinaffmpeg.com/live/class -c copy -f flv output.flv
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%816.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%8F%91%E5%B8%83%E4%B8%8E%E5%BD%95%E5%88%B6-RTMP-%E6%B5%816.png)
 
 ---

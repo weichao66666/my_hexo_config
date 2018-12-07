@@ -27,7 +27,7 @@ ffmpeg -formats
 
 2、输出结果（只截取了部分）：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD1.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD1.png)
 
 3、输出内容包括：
 
@@ -47,7 +47,7 @@ ffmpeg -encoders
 
 2、输出结果（只截取了部分）：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD2.png)
 
 3、输出内容包括：
 
@@ -67,7 +67,7 @@ ffmpeg -decoders
 
 2、输出结果（只截取了部分）：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD3.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD3.png)
 
 3、输出内容包括：
 
@@ -87,7 +87,7 @@ ffmpeg -filters
 
 2、输出结果（只截取了部分）：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD4.png)
 
 3、输出内容包括：
 
@@ -108,7 +108,7 @@ ffmpeg -h muxer=flv
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD5.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD5.png)
 
 3、输出内容包括：
 
@@ -127,7 +127,7 @@ ffmpeg -h demuxer=flv
 
 2、输出结果（只截取了部分）：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD6.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD6.png)
 
 3、输出内容包括：
 
@@ -146,7 +146,7 @@ ffmpeg -h encoder=h264
 
 2、输出结果（只截取了部分）：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD7.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD7.png)
 
 3、输出内容包括：
 
@@ -165,7 +165,7 @@ ffmpeg -h decoder=h264
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD8.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD8.png)
 
 3、输出内容包括：
 
@@ -184,7 +184,7 @@ ffmpeg -h filter=colorkey
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD9.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD9.png)
 
 3、输出内容包括：
 
@@ -207,7 +207,7 @@ ffmpeg -i sample.mp4 -vcodec copy -vbsf h264_mp4toannexb -an output.mp4
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD21.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD21.png)
 
 ### **拆分出音频**
 
@@ -219,7 +219,7 @@ ffmpeg -i sample.mp4 -acodec copy -vn output.aac
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD22.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD22.png)
 
 ### **视频和音频合成**
 
@@ -231,7 +231,7 @@ ffmpeg -i output.mp4 -i output.aac -vcodec copy -acodec copy -absf aac_adtstoasc
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD23.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD23.png)
 
 ### **切片**
 
@@ -276,8 +276,8 @@ ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 test_output-%d.mp
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD31.png)
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD32.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD31.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD32.png)
 
 3、生成的文件：
 
@@ -297,8 +297,8 @@ ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 -segment_list_typ
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD33.png)
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD34.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD33.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD34.png)
 
 3、生成的文件：
 
@@ -338,8 +338,8 @@ ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 -segment_list_typ
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD35.png)
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD36.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD35.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD36.png)
 
 3、生成的文件：
 
@@ -378,8 +378,8 @@ ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 -segment_list_typ
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD37.png)
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD38.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD37.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD38.png)
 
 3、生成的文件：
 
@@ -418,8 +418,8 @@ ffmpeg -re -i guibu.mp4 -c copy -f segment -segment_format mp4 -segment_list_typ
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD39.png)
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD40.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD39.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD40.png)
 
 3、生成的文件：
 
@@ -479,8 +479,8 @@ ffmpeg -re -i guibu.flv -c copy -f segment -segment_format mp4 -reset_timestamps
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD41.png)
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD42.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD41.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD42.png)
 
 3、生成的文件：
 
@@ -498,7 +498,7 @@ ffmpeg -re -i guibu.flv -c copy -f segment -segment_format mp4 -segment_times 60
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD43.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD43.png)
 
 3、生成的文件：
 
@@ -517,7 +517,7 @@ ffmpeg -ss 10 -i guibu.flv -c copy output.ts
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD44.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD44.png)
 
 #### **t**
 
@@ -532,7 +532,7 @@ ffmpeg -i guibu.flv -c copy -t 10 -copyts output.mp4
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD45.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD45.png)
 
 #### **output_ts_offset**
 
@@ -547,7 +547,7 @@ ffmpeg -i guibu.flv -c copy -t 10 -output_ts_offset 120 output.mp4
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD46.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD46.png)
 
 ## **视频操作部分**
 
@@ -609,6 +609,6 @@ ffmpeg -i ~/sample.mkv -vcodec mpeg4 -b:v 200k -r 15 -an output.mp4
 
 2、输出的信息：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD10.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffmpeg-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD10.png)
 
 ---

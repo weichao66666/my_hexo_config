@@ -243,7 +243,7 @@ public static class AvcPackager {
 
 按`FLV`要求的`AVC`的`AVCDecoderConfigurationRecord`格式编码。
 
-![](http://otkw6sse5.bkt.clouddn.com/ScreenRecorder-%E4%BB%A3%E7%A0%81%E8%A7%A3%E8%AF%BB1519666280252_1.png "Android 中 codec-specific data（编解码特征数据）")
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ScreenRecorder-%E4%BB%A3%E7%A0%81%E8%A7%A3%E8%AF%BB1519666280252_1.png "Android 中 codec-specific data（编解码特征数据）")
 
 其中可以看到`AVC`格式的`SPS`、`PPS`分别对应`csd-0`和`csd-1`。
 

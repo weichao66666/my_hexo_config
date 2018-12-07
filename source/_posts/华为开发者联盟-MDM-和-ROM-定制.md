@@ -17,7 +17,7 @@ copyright: true
 
 ## **在官网下载资料**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B61.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B61.png)
 
 下载的 SecurityAuthorizationOpenSDK-2.0.rar 包里面提供了部分资料，但是《目录结构说明.txt》中提到的【华为证书HUAWEI.cer】和【MDMSample.apk】均没有提供。
 
@@ -146,7 +146,7 @@ startActivity(intent);
 
 打包时签名只使用 V1 签名，不使用 V2 签名：
 
-![](http://otkw6sse5.bkt.clouddn.com/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B62.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B62.png)
 
 ## **华为证书签名**
 
@@ -156,11 +156,11 @@ startActivity(intent);
 
 1、在官网找到【权签】：
 
-![](http://otkw6sse5.bkt.clouddn.com/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B63.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B63.png)
 
 2、申请权签服务（第一次申请的是开发证书）：
 
-![](http://otkw6sse5.bkt.clouddn.com/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B64.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B64.png)
 
 3、与代理商签订《API授权证书申请承诺函》并将电子扫描件发送。
 
@@ -168,7 +168,7 @@ startActivity(intent);
 
 #### **开发证书申请**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B65.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B65.png)
 
 证书和设备绑定，在同一设备上可以正常使用开发证书签名后的任意版本的同一包名的 app，也就是实现了修改 app 后签名有效。
 证书有效期最长半年。
@@ -176,7 +176,7 @@ startActivity(intent);
 
 #### **商用证书申请**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B66.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B66.png)
 
 证书和 app 绑定，在任意设备上可以正常使用商用证书签名后的唯一 app，也就是实现了更换设备后签名有效。
 证书有效期无限。
@@ -184,7 +184,7 @@ startActivity(intent);
 
 ### **证书签名**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B67.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B67.png)
 
 ---
 
@@ -192,7 +192,7 @@ startActivity(intent);
 
 ## **开机动画前的 Logo**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B68.jpeg)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E5%8D%8E%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F-MDM-%E5%92%8C-ROM-%E5%AE%9A%E5%88%B68.jpeg)
 
 仅支持修改黑色背景图。
 

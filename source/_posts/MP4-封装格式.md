@@ -17,7 +17,7 @@ copyright: true
 
 # **MP4 的 box 树**
 
-![](http://otkw6sse5.bkt.clouddn.com/MP4-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/MP4-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1.png)
 
 MP4 常用参考标准排列方式：
 
@@ -118,7 +118,7 @@ box 中的字节序为网络字节序，也就是大端字节序（Big-Endian）
 
 box 根据 header 部分包含的信息的不同可以分为 Box 和 Full Box：
 
-![](http://otkw6sse5.bkt.clouddn.com/MP4-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/MP4-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F2.png)
 
 Box 定义：
 
@@ -2422,10 +2422,10 @@ ffmpeg -i sample.mp4 -c copy -f mp4 -movflags faststart sample_faststart.mp4
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/MP4-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F3.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/MP4-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F3.png)
 
 3、通过 mp4info 查看 box 树：
 
-![](http://otkw6sse5.bkt.clouddn.com/MP4-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/MP4-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F4.png)
 
 ---

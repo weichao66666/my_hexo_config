@@ -130,13 +130,13 @@ sudo apt-get install libopus-dev
 
 否则无法使用 ffplay 命令，使用时会报错：`The program 'ffplay' is currently not installed.`
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E7%AE%80%E4%BB%8B1526187550322_2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E7%AE%80%E4%BB%8B1526187550322_2.png)
 
 ### **下载 SDL2 源代码**
 
 在 [SDL 官网](https://www.libsdl.org/download-2.0.php "https://www.libsdl.org/download-2.0.php")下载 SDL2
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E7%AE%80%E4%BB%8B1526187551920_4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E7%AE%80%E4%BB%8B1526187551920_4.png)
 
 ### **编译 SDL2**
 
@@ -181,6 +181,6 @@ source ~/.profile
 ffmpeg -version
 {% endcodeblock %}
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E7%AE%80%E4%BB%8B1526045783703_2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E7%AE%80%E4%BB%8B1526045783703_2.png)
 
 ---

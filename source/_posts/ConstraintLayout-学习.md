@@ -62,11 +62,11 @@ app:layout_constraintEnd_toEndOf            |该控件以xx控件的结束端为
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A01.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A01.png)
 
 `app:layout_constraintBaseline_toBaselineOf`简单理解为`BTN_A`和`BTN_B`文字的底端对齐，布局修改后效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A02.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A02.png)
 
 ---
 
@@ -119,7 +119,7 @@ app:layout_goneMarginBottom     |当下端控件的可见性为`View.GONE`时，
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A03.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A03.png)
 
 ---
 
@@ -157,15 +157,15 @@ app:layout_constraintVertical_bias      |该控件垂直方向占位占父控件
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A04.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A04.png)
 
 （2）当百分比为`100`时，修改布局参数值为`1`，效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A05.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A05.png)
 
 （3）当百分比为`30`时，修改布局参数值为`0.3`，效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A06.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A06.png)
 
 ---
 
@@ -219,7 +219,7 @@ app:layout_constraintCircleAngle    |旋转角度
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A07.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A07.png)
 
 ---
 
@@ -290,7 +290,7 @@ app:layout_constraintHeight_percent     |该控件相对于父控件垂直方向
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A08.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A08.png)
 
 2、以`android:minHeight`为例
 
@@ -323,7 +323,7 @@ app:layout_constraintHeight_percent     |该控件相对于父控件垂直方向
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A09.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A09.png)
 
 3、`app:layout_constraintDimensionRatio`只有一个方向是`0dp`
 
@@ -349,7 +349,7 @@ app:layout_constraintHeight_percent     |该控件相对于父控件垂直方向
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A010.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A010.png)
 
 4、`app:layout_constraintDimensionRatio`两个方向都是`0dp`，可以使用`W`或`H`指定方向
 
@@ -376,7 +376,7 @@ app:layout_constraintHeight_percent     |该控件相对于父控件垂直方向
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A011.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A011.png)
 
 5、以`app:layout_constraintWidth_percent`为例
 
@@ -411,7 +411,7 @@ app:layout_constraintHeight_percent     |该控件相对于父控件垂直方向
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A012.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A012.png)
 
 ---
 
@@ -428,7 +428,7 @@ app:layout_constraintVertical_weight            |该控件垂直方向权重（�
 
 1、chain 的样式
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A013.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A013.png)
 
 2、构成 chain 的布局
 
@@ -464,11 +464,11 @@ app:layout_constraintVertical_weight            |该控件垂直方向权重（�
 
 效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A014.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A014.png)
 
 3、布局去掉`app:layout_constraintRight_toLeftOf="@+id/btn_B"`即不能构成 chain，效果
 
-![](http://otkw6sse5.bkt.clouddn.com/ConstraintLayout-%E5%AD%A6%E4%B9%A015.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ConstraintLayout-%E5%AD%A6%E4%B9%A015.png)
 
 ---
 

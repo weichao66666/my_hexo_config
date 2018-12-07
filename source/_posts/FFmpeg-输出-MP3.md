@@ -29,7 +29,7 @@ ffmpeg -h encoder=libmp3lame
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-MP31.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-MP31.png)
 
 ## **参数**
 
@@ -54,7 +54,7 @@ ffmpeg -i sample.mp4 -acodec libmp3lame output.mp3
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-MP32.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-MP32.png)
 
 ---
 
@@ -82,7 +82,7 @@ ffmpeg -i sample.mp4 -acodec libmp3lame -q:a 8 output.mp3
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-MP33.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-MP33.png)
 
 ---
 
@@ -96,6 +96,6 @@ ffmpeg -i sample.mp4 -acodec libmp3lame -b:a 64k -abr 1 output.mp3
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-MP34.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-MP34.png)
 
 ---

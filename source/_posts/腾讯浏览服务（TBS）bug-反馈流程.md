@@ -18,7 +18,7 @@ copyright: true
 
 快速点击按钮，两次加载同一 url，部分时候会出现：
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B1.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B1.png)
 
 ---
 
@@ -28,11 +28,11 @@ copyright: true
 
 打开【开发者选项】中的【显示布局边界】。
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B2.png)
 
 ## **复现 bug**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8Bdemo480p.gif)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8Bdemo480p.gif)
 
 如果可以看见布局边框，说明 bug 属于原生，否则可能是原生自定义控件或前端页面。
 
@@ -40,13 +40,13 @@ copyright: true
 
 1、长按 WebView 中的文字部分，如果未出现【选择复制】说明是系统 WebView（第一次启动app肯定是系统 WebView，如果第一次使用时间足够长，会将 TBS 下载到本地，从第二次开始 app 使用的就是 TBS）。
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B3.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B3.png)
 
 在该场景下尝试复现 bug。
 
 2、长按 WebView 中的文字部分，如果出现【选择复制】说明是 TBS。
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B4.png)
 
 在该场景下尝试复现 bug。
 
@@ -54,7 +54,7 @@ copyright: true
 
 # **通过论坛反馈 bug**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B5.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B5.png)
 
 ## **生成网络日志**
 
@@ -62,31 +62,31 @@ copyright: true
 
 1、可以在 Log 层添加加载 http://debugx5.qq.com 的开关。
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B6.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B6.png)
 
 2、如果本地没有 TBS，加载 http://debugx5.qq.com 时会有相关提示：
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B7.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B7.png)
 
 3、点击【进入DebugTbs安装或打开X5内核】，安装线上内核。
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B8.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B8.png)
 
 4、重启 app，再次加载 http://debugx5.qq.com。
 
 5、点击【日志功能开启】。
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B9.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B9.png)
 
 6、点击 Log 层的 WebView 返回，再复现 bug。
 
 7、点击【日志功能关闭并上传】。
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B10.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B10.png)
 
 8、记录 GUID，将 GUID 输入反馈页面的【操作步骤】中。
 
-![](http://otkw6sse5.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B11.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E8%85%BE%E8%AE%AF%E6%B5%8F%E8%A7%88%E6%9C%8D%E5%8A%A1%EF%BC%88TBS%EF%BC%89bug-%E5%8F%8D%E9%A6%88%E6%B5%81%E7%A8%8B11.png)
 
 ---
 

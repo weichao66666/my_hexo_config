@@ -45,6 +45,6 @@ ffmpeg -rtsp_transport tcp -i rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%BD%95%E5%88%B6-RTSP-%E6%B5%811.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%BD%95%E5%88%B6-RTSP-%E6%B5%811.png)
 
 ---

@@ -25,11 +25,11 @@ ffplay --help
 
 如果出现：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD1.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD1.png)
 
 需要确认 FFmpeg 文件夹中是否有可执行文件 ffplay：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD2.png)
 
 如果没有，说明在编译 FFmpeg 源代码时，系统中不存在 SDL（旧版本 FFmpeg 需要 1.2，新版本 FFmpeg 需要 2.0），导致未自动编译出 ffplay，需要安装 SDL，且需要先删除掉已安装的 FFmpeg，再重新编译 FFmpeg 源代码并安装。
 
@@ -37,7 +37,7 @@ ffplay --help
 
 2、输出结果（只截取了部分）：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD3.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD3.png)
 
 ## **部分参数说明**
 
@@ -97,11 +97,11 @@ ffplay -window_title "播放测试" rtmp://live.hkstv.hk.lxdns.com/live/hks
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD4.png)
 
 3、播放成功的截图：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD5.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD5.png)
 
 ## **强制使用错误的解码器会导致解码失败**
 
@@ -113,7 +113,7 @@ ffplay -vcodec mpeg4 sample.mp4
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD6.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD6.png)
 
 ## **加载字幕**
 
@@ -149,11 +149,11 @@ ffplay -window_title "播放测试" -vf subtitles=sample.srt sample.mp4
 
 3、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD7.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD7.png)
 
 4、加载字幕成功的截图：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD8.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD8.png)
 
 ## **将音频数据以音频波形的形式显示**
 
@@ -165,11 +165,11 @@ ffplay -showmode 1 sample.mp4
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD9.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD9.png)
 
 3、显示成功的截图：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD10.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD10.png)
 
 ## **显示解码宏块（新版本 FFmpeg 已失效）**
 
@@ -189,10 +189,10 @@ ffplay -flags2 +export_mvs sample.mp4 -vf codecview=mv=pf+bf+bb
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD11.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD11.png)
 
 3、显示成功的截图：
 
-![](http://otkw6sse5.bkt.clouddn.com/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD12.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/ffplay-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD12.png)
 
 ---

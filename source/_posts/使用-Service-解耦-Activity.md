@@ -9,15 +9,15 @@ copyright: true
 
 # **需求**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E4%BD%BF%E7%94%A8-Service-%E8%A7%A3%E8%80%A6-Activity_1.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E4%BD%BF%E7%94%A8-Service-%E8%A7%A3%E8%80%A6-Activity_1.png)
 
 # **高耦合 Activity 搞定需求**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E4%BD%BF%E7%94%A8-Service-%E8%A7%A3%E8%80%A6-Activity_2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E4%BD%BF%E7%94%A8-Service-%E8%A7%A3%E8%80%A6-Activity_2.png)
 
 # **解耦 Activity 搞定需求**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E4%BD%BF%E7%94%A8-Service-%E8%A7%A3%E8%80%A6-Activity_3.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E4%BD%BF%E7%94%A8-Service-%E8%A7%A3%E8%80%A6-Activity_3.png)
 
 ## **问题**
 
@@ -35,7 +35,7 @@ copyright: true
 
 ## **使用 Service 解决问题**
 
-![](http://otkw6sse5.bkt.clouddn.com/%E4%BD%BF%E7%94%A8-Service-%E8%A7%A3%E8%80%A6-Activity_4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E4%BD%BF%E7%94%A8-Service-%E8%A7%A3%E8%80%A6-Activity_4.png)
 
 A 绑定 Service，并设置上传成功和失败的回调，当用户点击【上传】后，B 绑定 Service，将图片通过 Service 上传，并直接关闭 B。
 

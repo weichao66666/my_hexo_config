@@ -45,8 +45,8 @@ ffmpeg -re -i guibu.mp4 -c copy -f hls -bsf:v h264_mp4toannexb output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F2.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -86,8 +86,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F3.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F3.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F4.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -125,8 +125,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -start_number 100 output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F5.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F6.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F5.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F6.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -165,8 +165,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_time 10 output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F7.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F8.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F7.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F8.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -204,8 +204,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_list_size 3 output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F9.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F10.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F9.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F10.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -240,8 +240,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_wrap 3 output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F11.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F12.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F11.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F12.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -280,8 +280,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_base_url /home/weichao/ output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F13.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F14.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F13.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F14.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -319,8 +319,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_segment_filename live-%d.ts output.m
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F15.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F16.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F15.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F16.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -360,8 +360,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_flags delete_segments output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F17.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F18.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F17.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F18.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -399,8 +399,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_flags round_durations output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F19.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F20.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F19.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F20.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -438,7 +438,7 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_flags discont_start output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F21.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F21.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -475,8 +475,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_flags omit_endlist output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F23.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F24.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F23.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F24.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -513,8 +513,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -hls_time 10 -hls_flags split_by_time out
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F25.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F26.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F25.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F26.png)
 
 3、输出的 M3U8 文件的内容：
 
@@ -552,8 +552,8 @@ ffmpeg -re -i guibu.flv -c copy -f hls -use_localtime 1 output.m3u8
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F27.png)
-![](http://otkw6sse5.bkt.clouddn.com/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F28.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F27.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/HLS%20%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F28.png)
 
 3、输出的 M3U8 文件的内容：
 

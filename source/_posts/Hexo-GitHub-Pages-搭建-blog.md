@@ -32,16 +32,16 @@ copyright: true
 在本地创建文件夹，比如 `D:\weichao\hexo`
 
 windows + r 调出运行，输入 `cmd`，进入刚才创建的目录
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008ec.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008ec.png)
 
 输入`npm install -g hexo-cli`
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008ed.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008ed.png)
 warn 不会影响正常使用
 
 输入`npm install hexo --save`，等待安装完成
 
 输入`hexo -v`，显示
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e6.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e6.png)
 说明 Hexo 安装完成
 
 ---
@@ -59,10 +59,10 @@ windows + r 调出运行，输入 `cmd`，进入刚才创建的目录
 输入`hexo g`
 
 输入`hexo s`，会提示浏览器访问地址：
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008ea.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008ea.png)
 
 在任意浏览器中输入该地址：
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008eb.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008eb.png)
 
 ---
 
@@ -77,7 +77,7 @@ windows + r 调出运行，输入 `cmd`，进入 `D:\weichao\hexo\config`
     git config --global user.name "xx"
     git config --global user.email "xx@yy.com"
 
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e5.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e5.png)
 
 修改 `D:\weichao\hexo\config\_config.yml`
 
@@ -105,7 +105,7 @@ windows + r 调出运行，输入 `cmd`，进入 `D:\weichao\hexo\config`
 
     ssh-keygen -t rsa -C "xx@yy.com"
 
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e7.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e7.png)
 `id_rsa` 是密钥，`id_rsa.pub` 是公钥
 
 ### **添加密钥到 ssh-agent**
@@ -113,19 +113,19 @@ windows + r 调出运行，输入 `cmd`，进入 `D:\weichao\hexo\config`
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/id_rsa
 
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972ce32ab644125a100096c.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972ce32ab644125a100096c.png)
 
 ### **添加密钥到 GitHub**
 
 复制 `id_rsa.pub` 中的内容
 
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e9.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e9.png)
 
 ### **测试 ssh keys 是否设置成功**
 
 输入 `ssh -T git@github.com`
 
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e8.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e8.png)
 
 ---
 
@@ -173,4 +173,4 @@ windows + r 调出运行，输入 `cmd`
 
     hexo d -g
 
-![](http://otkw6sse5.bkt.clouddn.com/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA-blog_files5972c794ab644125a10008e4.png)

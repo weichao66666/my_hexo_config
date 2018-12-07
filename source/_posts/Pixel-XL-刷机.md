@@ -21,7 +21,7 @@ copyright: true
 
 1. 	从[工厂镜像官网](https://developers.google.cn/android/images "https://developers.google.cn/android/images")下载对应版本的 zip 文件
 
-	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E5%88%B7%E6%9C%BA_1.png)
+	![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Pixel-XL-%E5%88%B7%E6%9C%BA_1.png)
 
 ### **刷机**
 
@@ -29,7 +29,7 @@ copyright: true
 
 	比如将 zip 文件解压到 f 盘根目录。
 
-	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E5%88%B7%E6%9C%BA_2.png)
+	![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Pixel-XL-%E5%88%B7%E6%9C%BA_2.png)
 
 1. 修改文件，用于刷机时保留系统数据
 
@@ -43,14 +43,14 @@ copyright: true
 
 1. 进入 `flash-all.bat` 所在目录
 
-	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E5%88%B7%E6%9C%BA_3.png)
+	![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Pixel-XL-%E5%88%B7%E6%9C%BA_3.png)
 
 1. 执行 `flash-all.bat`，等待刷机完成
 
-	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E5%88%B7%E6%9C%BA_4.png)
+	![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Pixel-XL-%E5%88%B7%E6%9C%BA_4.png)
 
 	重启后进入`设置`->`系统`可以看到系统版本。
 
-	![](http://otkw6sse5.bkt.clouddn.com/Pixel-XL-%E5%88%B7%E6%9C%BA_5.png)
+	![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Pixel-XL-%E5%88%B7%E6%9C%BA_5.png)
 
 ---

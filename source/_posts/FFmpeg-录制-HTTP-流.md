@@ -57,8 +57,8 @@ ffmpeg -ss 300 -seekable 0 -i http://live.hkstv.hk.lxdns.com/live/hks/playlist.m
 
 2、输出结果（实际没播放成功）：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%BD%95%E5%88%B6-HTTP-%E6%B5%811.png)
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%BD%95%E5%88%B6-HTTP-%E6%B5%812.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%BD%95%E5%88%B6-HTTP-%E6%B5%811.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%BD%95%E5%88%B6-HTTP-%E6%B5%812.png)
 
 ### **非阻塞**
 
@@ -70,7 +70,7 @@ ffmpeg -ss 300 -seekable 1 -i http://live.hkstv.hk.lxdns.com/live/hks/playlist.m
 
 2、输出结果（实际没播放成功）：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%BD%95%E5%88%B6-HTTP-%E6%B5%813.png)
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E5%BD%95%E5%88%B6-HTTP-%E6%B5%814.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%BD%95%E5%88%B6-HTTP-%E6%B5%813.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E5%BD%95%E5%88%B6-HTTP-%E6%B5%814.png)
 
 ---

@@ -9,7 +9,7 @@ copyright: true
 
 # **逻辑**
 
-![](http://otkw6sse5.bkt.clouddn.com/Hybrid-App-%E8%BF%94%E5%9B%9E%E9%94%AE%E5%A4%84%E7%90%86QQ%E6%88%AA%E5%9B%BE20180124000230.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Hybrid-App-%E8%BF%94%E5%9B%9E%E9%94%AE%E5%A4%84%E7%90%86QQ%E6%88%AA%E5%9B%BE20180124000230.png)
 
 App启动后显示NormalFragment，在NormalFragment中有一个原生的对话框，通过按返回键会对退出App做二次确认，且默认为不退出，同时NormalFragment中有一个按钮，点击后可以跳转到WebWrapperFragment，在WebWrapperFragment中有一个WebView，WebView中有对话框，通过按返回键会对跳转到NormalFragment做二次确认，且默认为不退出。
 

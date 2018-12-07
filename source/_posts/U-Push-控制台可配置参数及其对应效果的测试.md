@@ -18,12 +18,12 @@ copyright: true
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%951.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%951.png)
 
 ## **效果**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%952.png)
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%953.jpeg)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%952.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%953.jpeg)
 
 ---
 
@@ -59,11 +59,11 @@ public Notification getNotification(Context context, UMessage msg) {
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%954.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%954.png)
 
 ## **效果**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%955.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%955.png)
 
 ---
 
@@ -71,15 +71,15 @@ public Notification getNotification(Context context, UMessage msg) {
 
 ## **上传图片**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%956.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%956.png)
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%957.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%957.png)
 
 ## **效果**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%958.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%958.png)
 
 ---
 
@@ -87,20 +87,20 @@ public Notification getNotification(Context context, UMessage msg) {
 
 ## **大图标文件**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%959.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%959.png)
 
 ## **小图标文件**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9510.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9510.png)
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9511.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9511.png)
 
 ## **效果**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9512.png)
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9513.jpeg)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9512.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9513.jpeg)
 
 ---
 
@@ -108,20 +108,20 @@ public Notification getNotification(Context context, UMessage msg) {
 
 ## **大图标文件**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9514.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9514.png)
 
 ## **小图标文件**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9515.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9515.png)
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9516.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9516.png)
 
 ## **效果**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9517.png)
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9518.jpeg)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9517.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9518.jpeg)
 
 ---
 
@@ -129,24 +129,24 @@ public Notification getNotification(Context context, UMessage msg) {
 
 ## **上传图片**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9519.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9519.png)
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9520.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9520.png)
 
 ## **效果**
 
 点击下拉按钮可以显示图片。
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9521.png)
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9522.jpeg)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9521.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9522.jpeg)
 
 ---
 
 # **目标人群/目标人群/部分用户**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9523.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9523.png)
 
 按【标签】过滤时提示“无匹配结果”是因为没有用户添加过标签。
 
@@ -154,19 +154,19 @@ public Notification getNotification(Context context, UMessage msg) {
 
 # **目标人群/目标人群/独立用户**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9524.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9524.png)
 
 ---
 
 # **目标人群/目标人群/推送时间/定时推送**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9525.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9525.png)
 
 ---
 
 # **目标人群/目标人群/推送时间/重复推送**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9526.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9526.png)
 
 ---
 
@@ -174,7 +174,7 @@ public Notification getNotification(Context context, UMessage msg) {
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9527.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9527.png)
 
 ## **效果**
 
@@ -186,7 +186,7 @@ public Notification getNotification(Context context, UMessage msg) {
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9528.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9528.png)
 
 ## **效果**
 
@@ -207,7 +207,7 @@ public void dealWithCustomAction(Context context, UMessage msg) {
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9530.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9530.png)
 
 ## **效果**
 
@@ -219,13 +219,13 @@ public void dealWithCustomAction(Context context, UMessage msg) {
 
 ## **消息详情**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9531.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9531.png)
 
 ## **效果**
 
 显示效果和默认相同，但是点击后在触发 4 个可选【后续动作】中对应的回调的同时，会传递参数。
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9532.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9532.png)
 
 ---
 
@@ -237,13 +237,13 @@ public void dealWithCustomAction(Context context, UMessage msg) {
 
 # **后续行为/提醒方式**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9533.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9533.png)
 
 ---
 
 # **后续行为/高级设置/限制发送速度**
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9534.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9534.png)
 
 ---
 
@@ -251,6 +251,6 @@ public void dealWithCustomAction(Context context, UMessage msg) {
 
 为用户加上标签，方便推送时按照标签来筛选。
 
-![](http://otkw6sse5.bkt.clouddn.com/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9535.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/U-Push-%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8F%AF%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%B9%E5%BA%94%E6%95%88%E6%9E%9C%E7%9A%84%E6%B5%8B%E8%AF%9535.png)
 
 ---

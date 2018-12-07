@@ -29,7 +29,7 @@ ffmpeg -i sample.mp4 -c:a aac -b:a 160k output.aac
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-AAC1.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-AAC1.png)
 
 ## **使用 q 参数**
 
@@ -43,7 +43,7 @@ ffmpeg -i sample.mp4 -c:a aac -q:a 2 output.aac
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-AAC2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-AAC2.png)
 
 ---
 
@@ -61,7 +61,7 @@ ffmpeg -i sample.mp4 -c:a libfdk_aac -b:a 128k output.aac
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-AAC3.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-AAC3.png)
 
 ## **动态码率（VBR）模式**
 
@@ -92,8 +92,8 @@ ffmpeg -i sample.mp4 -c:a libfdk_aac output.m4a
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-AAC4.png)
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-AAC5.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-AAC4.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-AAC5.png)
 
 ### **高质量 AAC 设置**
 
@@ -107,7 +107,7 @@ ffmpeg -i sample.mp4 -c:a libfdk_aac -profile:a aac_he -b:a 64k output.aac
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-AAC6.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-AAC6.png)
 
 #### **HEv2-AAC 音频编码设置**
 
@@ -119,6 +119,6 @@ ffmpeg -i sample.mp4 -c:a libfdk_aac -profile:a aac_he_v2 -b:a 32k output.aac
 
 2、输出结果（失败）：
 
-![](http://otkw6sse5.bkt.clouddn.com/FFmpeg-%E8%BE%93%E5%87%BA-AAC7.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FFmpeg-%E8%BE%93%E5%87%BA-AAC7.png)
 
 ---

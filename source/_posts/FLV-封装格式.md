@@ -19,7 +19,7 @@ copyright: true
 
 # **FLV 封装格式**
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1.png)
 
 ---
 
@@ -27,7 +27,7 @@ copyright: true
 
 ## **定义**
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F2.png)
 
 翻译：
 
@@ -60,7 +60,7 @@ TAGN|FLV TAG|第 N 个 TAG
 
 ## **FLV TAG**
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8FQQ%E6%88%AA%E5%9B%BE20180228213618.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8FQQ%E6%88%AA%E5%9B%BE20180228213618.png)
 
 翻译：
 
@@ -91,7 +91,7 @@ Data|音频数据/视频数据/脚本数据|包含 startcode
 
 ### **视频 TAG 的 header**
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F10.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F10.png)
 
 翻译：
 
@@ -104,7 +104,7 @@ CompositionTime|当 Codec 为 H264 编码时占用这个 24 位|当编码使用 
 
 ### **音频 TAG 的 header**
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8FQQ%E6%88%AA%E5%9B%BE20180228213649.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8FQQ%E6%88%AA%E5%9B%BE20180228213649.png)
 
 翻译：
 
@@ -124,19 +124,19 @@ AACPacketType|当音频为 AAC 时占用这 8 位|0：AAC Sequence Header<br>1�
 
 参数包括：
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F6.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F6.png)
 
 其中，`audiocodecid`范围：
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F7.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F7.png)
 
 `videocodecid`范围：
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F8.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F8.png)
 
 参数写入规则根据数据类型而定。
 数据类型包括：
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F9.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F9.png)
 
 数据类型|参数写入规则
 --|--
@@ -147,7 +147,7 @@ ECMA array|4个字节的`8` + 每个元素（key长度个字节的key + 1个字�
 
 ### **视频 TAG 的 body（AVC 编码格式）**
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F13.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F13.png)
 
 翻译：
 
@@ -198,7 +198,7 @@ aligned(8) class AVCDecoderConfigurationRecord {
 
 ##### **从报文看结构**
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737798220_32.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737798220_32.png)
 
 图中阴影部分对应了`header`全部数据
 
@@ -219,7 +219,7 @@ aligned(8) class AVCDecoderConfigurationRecord {
 
 ### **音频 TAG 的 body（AAC 编码格式）**
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8FQQ%E6%88%AA%E5%9B%BE20180228213710.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8FQQ%E6%88%AA%E5%9B%BE20180228213710.png)
 
 翻译：
 
@@ -3466,7 +3466,7 @@ ffmpeg -i sample.mp4 -c copy -f flv output.flv
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737808493_41.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737808493_41.png)
 
 ### **生成带关键索引的 FLV**
 
@@ -3480,18 +3480,18 @@ ffmpeg -i sample.mp4 -c copy -f flv -flvflags add_keyframe_index output_index.fl
 
 2、输出结果：
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737803664_35.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737803664_35.png)
 
 3、使用 FLV analyzer 对比察看：
 
 （1）原文件：
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737804563_37.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737804563_37.png)
 
 （2）带关键索引的文件：
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737804895_39.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737804895_39.png)
 
-![](http://otkw6sse5.bkt.clouddn.com/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737788918_24.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/FLV-%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F1526737788918_24.png)
 
 ---

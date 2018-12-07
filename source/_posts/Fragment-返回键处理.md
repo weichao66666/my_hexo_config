@@ -9,7 +9,7 @@ copyright: true
 
 # **逻辑**
 
-![](http://otkw6sse5.bkt.clouddn.com/Fragment-%E8%BF%94%E5%9B%9E%E9%94%AE%E5%A4%84%E7%90%861514695944977_2.png)
+![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/Fragment-%E8%BF%94%E5%9B%9E%E9%94%AE%E5%A4%84%E7%90%861514695944977_2.png)
 
 启动后进入 FirstFragment，在 FirstFragment 按返回键退出，可以通过点击按钮显示 SecondFragment、ThirdFragment、FourthFragment：
 
