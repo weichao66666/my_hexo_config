@@ -21,8 +21,8 @@ copyright:
 **身    高**：175cm
 **民    族**：汉
 **政治面貌**：群众
-**住    址**：北京市石景山区杨庄小区
-**期望职位**：Android开发工程师
+**住    址**：北京市石景山区老山西里
+**职    位**：Android开发工程师
 
 ---
 
@@ -46,11 +46,11 @@ Android原生独立开发
 ### **[北师数字教材](http://www.bsszjc.com/index_new.html "http://www.bsszjc.com/index_new.html")**
 * 主要负责登录、英语口语评测、英语作业3个模块的开发，以及配合前端实现分享、支付等功能。
 * 负责官网和应用市场（百度手机助手、阿里应用分发开放平台、腾讯应用宝、华为应用市场、小米应用商店、360手机助手、OPPO软件商店、VIVO应用商店）的打包、上线。
-* 荣获[第十一届新闻出版业互联网发展大会“优秀知识资源”奖](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86%E5%8C%97%E5%B8%88%E6%95%B0%E5%AD%97%E6%95%99%E6%9D%90.jpg)。
+* 荣获[第十一届新闻出版业互联网发展大会“优秀知识资源”奖](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/2018%E4%BC%98%E7%A7%80%E7%9F%A5%E8%AF%86%E8%B5%84%E6%BA%90.jpg)。
 
 ### **[京师书法云教室](http://sf.jsxfedu.com/ "http://sf.jsxfedu.com/")**
 * 主要负责学生端与教室端建立/保持连接、作业模块的开发，以及针对来自不同省份的需求做定制化开发。
-* 荣获[第十一届新闻出版业互联网发展大会“融合出版创新”奖](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86%E4%BA%AC%E5%B8%88%E4%B9%A6%E6%B3%95%E4%BA%91%E6%95%99%E5%AE%A4.jpg)。
+* 荣获[第十一届新闻出版业互联网发展大会“融合出版创新”奖](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/2018%E8%9E%8D%E5%90%88%E5%87%BA%E7%89%88%E5%88%9B%E6%96%B0.jpg)。
 
 ## **2015.07-2017.04           北京云豆科技有限公司                  Android软件开发工程师**
 ### **公司简介**
