@@ -112,7 +112,7 @@ make install
 export CC=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
 export CXX=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang++
 MY_PREFIX=./Android/arm64-v8a
-MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=aarch64-none-linux-android21 --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in"
+MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=aarch64-none-linux-android21 --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64"
 MY_HOST=aarch64-linux-android
 MY_CROSS_PREFIX=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-
 my_build
@@ -121,7 +121,7 @@ my_build
 export CC=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang
 export CXX=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang++
 MY_PREFIX=./Android/armeabi-v7a
-MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in"
+MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64"
 MY_HOST=armv7a-linux-android
 MY_CROSS_PREFIX=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
 my_build
@@ -130,7 +130,7 @@ my_build
 export CC=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android21-clang
 export CXX=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android21-clang++
 MY_PREFIX=./Android/x86_64
-MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=x86_64-none-linux-android21 --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in"
+MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=x86_64-none-linux-android21 --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64"
 MY_HOST=x86_64-linux-android
 MY_CROSS_PREFIX=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android-
 my_build
@@ -139,7 +139,7 @@ my_build
 export CC=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android24-clang
 export CXX=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android24-clang++
 MY_PREFIX=./Android/x86
-MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=i686-none-linux-android21 --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in"
+MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=i686-none-linux-android21 --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64"
 MY_HOST=i686-linux-android
 MY_CROSS_PREFIX=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android-
 my_build
@@ -166,12 +166,12 @@ my_build
 ![](https://weichao-io-1257283924.cos.ap-beijing.myqcloud.com/qldownload/NDK-r21d-x264-%E7%BC%96%E5%86%99%E8%84%9A%E6%9C%AC%E6%96%87%E4%BB%B6-%E7%BC%96%E8%AF%91%E7%94%9F%E6%88%90-Android-%E6%89%80%E9%9C%80%E7%9A%84%E5%BA%93/6.png)
 
 ```shell
---target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/weichao/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/weichao/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+--target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/weichao/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/weichao/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot
 ```
 
 调整路径，修改参数，去掉重复的参数：
 ```shell
---target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+--target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/weichao/android-ndk-r21d/toolchains/llvm/prebuilt/linux-x86_64
 ```
 
 ## **对脚本中的变量进行抽取，方便修改**
@@ -204,7 +204,7 @@ make install
 export CC=$TOOLCHAIN/bin/aarch64-linux-android$API-clang
 export CXX=$TOOLCHAIN/bin/aarch64-linux-android$API-clang++
 MY_PREFIX=./Android/arm64-v8a
-MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=aarch64-none-linux-android21 --gcc-toolchain=$TOOLCHAIN $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in"
+MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=aarch64-none-linux-android21 --gcc-toolchain=$TOOLCHAIN"
 MY_HOST=aarch64-linux-android
 MY_CROSS_PREFIX=$TOOLCHAIN/bin/aarch64-linux-android-
 my_build
@@ -213,7 +213,7 @@ my_build
 export CC=$TOOLCHAIN/bin/armv7a-linux-androideabi$API-clang
 export CXX=$TOOLCHAIN/bin/armv7a-linux-androideabi$API-clang++
 MY_PREFIX=./Android/armeabi-v7a
-MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC --gcc-toolchain=$TOOLCHAIN $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in"
+MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC --gcc-toolchain=$TOOLCHAIN"
 MY_HOST=armv7a-linux-android
 MY_CROSS_PREFIX=$TOOLCHAIN/bin/arm-linux-androideabi-
 my_build
@@ -222,7 +222,7 @@ my_build
 export CC=$TOOLCHAIN/bin/x86_64-linux-android$API-clang
 export CXX=$TOOLCHAIN/bin/x86_64-linux-android$API-clang++
 MY_PREFIX=./Android/x86_64
-MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=x86_64-none-linux-android21 --gcc-toolchain=$TOOLCHAIN $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in"
+MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=x86_64-none-linux-android21 --gcc-toolchain=$TOOLCHAIN"
 MY_HOST=x86_64-linux-android
 MY_CROSS_PREFIX=$TOOLCHAIN/bin/x86_64-linux-android-
 my_build
@@ -231,7 +231,7 @@ my_build
 export CC=$TOOLCHAIN/bin/i686-linux-android$API_2-clang
 export CXX=$TOOLCHAIN/bin/i686-linux-android$API_2-clang++
 MY_PREFIX=./Android/x86
-MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=i686-none-linux-android21 --gcc-toolchain=$TOOLCHAIN $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in"
+MY_EXTRA_CFLAGS="-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC --target=i686-none-linux-android21 --gcc-toolchain=$TOOLCHAIN"
 MY_HOST=i686-linux-android
 MY_CROSS_PREFIX=$TOOLCHAIN/bin/i686-linux-android-
 my_build
